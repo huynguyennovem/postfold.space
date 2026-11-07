@@ -20,23 +20,25 @@
 /* ---------- Tokens ---------- */
 :root {
   color-scheme: light dark;
-  --bg: #f6f8fb;
-  --bg-alt: #edf2f8;
+  --bg: #f7f7f8;
+  --bg-alt: #eeeef0;
   --card: #ffffff;
-  --border: rgba(16, 38, 66, 0.1);
-  --text: #0f1b2a;
-  --text-2: #4a5a6e;
-  --text-3: #6b7a8c;
-  --accent: #276aa8;
-  --accent-hover: #1f5a91;
-  --accent-soft: rgba(39, 106, 168, 0.1);
+  --border: rgba(0, 0, 0, 0.09);
+  --text: #0b0b0c;
+  --text-2: #4d5157;
+  --text-3: #71767b;
+  --accent: #0b0b0c;
+  --accent-hover: #2a2c30;
+  --accent-soft: rgba(0, 0, 0, 0.06);
   --accent-ink: #ffffff;
-  --hero-from: #2f78bd;
-  --hero-to: #1d5690;
-  --header-bg: rgba(246, 248, 251, 0.82);
-  --shadow-sm: 0 1px 2px rgba(10, 30, 60, 0.06);
-  --shadow-md: 0 12px 32px -16px rgba(10, 40, 80, 0.28);
-  --shadow-lg: 0 30px 60px -28px rgba(10, 40, 80, 0.45);
+  --link: #276aa8;
+  --link-hover: #1f5a91;
+  --dark-from: #1c1d20;
+  --dark-to: #000000;
+  --header-bg: rgba(247, 247, 248, 0.82);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 12px 32px -16px rgba(0, 0, 0, 0.28);
+  --shadow-lg: 0 30px 60px -28px rgba(0, 0, 0, 0.45);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
   --max: 1160px;
   --header-h: 68px;
@@ -46,23 +48,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0b1119;
-    --bg-alt: #101924;
-    --card: #141f2c;
-    --border: rgba(180, 205, 235, 0.12);
-    --text: #e9eff6;
-    --text-2: #a9b6c6;
-    --text-3: #8695a8;
-    --accent: #5e9ed9;
-    --accent-hover: #7db2e3;
-    --accent-soft: rgba(94, 158, 217, 0.14);
-    --accent-ink: #06121f;
-    --hero-from: #1d4f80;
-    --hero-to: #0f2f52;
-    --header-bg: rgba(11, 17, 25, 0.8);
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 12px 32px -16px rgba(0, 0, 0, 0.7);
-    --shadow-lg: 0 30px 60px -28px rgba(0, 0, 0, 0.8);
+    --bg: #000000;
+    --bg-alt: #0c0c0e;
+    --card: #16171a;
+    --border: rgba(255, 255, 255, 0.11);
+    --text: #f2f2f3;
+    --text-2: #a7abb1;
+    --text-3: #868b92;
+    --accent: #f2f2f3;
+    --accent-hover: #ffffff;
+    --accent-soft: rgba(255, 255, 255, 0.08);
+    --accent-ink: #000000;
+    --link: #5e9ed9;
+    --link-hover: #7db2e3;
+    --dark-from: #1a1b1e;
+    --dark-to: #0a0a0b;
+    --header-bg: rgba(0, 0, 0, 0.78);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 12px 32px -16px rgba(0, 0, 0, 0.8);
+    --shadow-lg: 0 30px 60px -28px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -98,16 +102,16 @@ img {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--accent-hover);
+  color: var(--link-hover);
 }
 
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--link);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -204,6 +208,7 @@ p {
   width: 34px;
   height: 34px;
   border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--border);
 }
 
 .menu {
@@ -316,7 +321,7 @@ p {
 .btn-primary {
   background: var(--accent);
   color: var(--accent-ink);
-  box-shadow: 0 8px 20px -10px var(--accent);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
@@ -410,7 +415,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-3);
   margin-bottom: 12px;
 }
 
@@ -433,12 +438,12 @@ section {
   width: 84px;
   height: 84px;
   border-radius: 19px;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 0 0 1px var(--border), var(--shadow-md);
   margin-bottom: 26px;
 }
 
 .hero h1 .accent {
-  color: var(--accent);
+  color: var(--text-3);
 }
 
 .lead {
@@ -476,7 +481,7 @@ section {
   width: 74%;
   margin-left: auto;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 0 0 1px var(--border), var(--shadow-lg);
   transform: rotate(2deg);
 }
 
@@ -644,7 +649,7 @@ section {
 
 .steps-visual img {
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 0 0 1px var(--border), var(--shadow-lg);
 }
 
 .steps-more {
@@ -721,7 +726,7 @@ section {
 
 .gallery img {
   border-radius: 22px;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 0 0 1px var(--border), var(--shadow-md);
 }
 
 .gallery-phone img {
@@ -787,8 +792,9 @@ section {
 
 /* ---------- Privacy band ---------- */
 .band {
-  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+  background: linear-gradient(135deg, var(--dark-from), var(--dark-to));
   color: #fff;
+  border-block: 1px solid var(--border);
 }
 
 .band h2,
@@ -817,7 +823,7 @@ section {
 
 .band .btn-secondary {
   background: #fff;
-  color: #123a63;
+  color: #0b0b0c;
   border-color: transparent;
 }
 
@@ -885,8 +891,9 @@ section {
 }
 
 .cta-card {
-  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+  background: linear-gradient(135deg, var(--dark-from), var(--dark-to));
   border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 64px 24px;
   box-shadow: var(--shadow-lg);
 }
@@ -896,7 +903,7 @@ section {
   height: 96px;
   border-radius: 22px;
   margin: 0 auto 22px;
-  box-shadow: 0 16px 32px -14px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 16px 32px -14px rgba(0, 0, 0, 0.6);
 }
 
 .cta-card h2 {
