@@ -1,0 +1,480 @@
+# Postfold
+
+> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind, no analytics and no tracking, and it syncs through the user's private iCloud. Requires iOS 18 or later.
+
+This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
+
+Key facts:
+- Saves posts from X into user-created folders (bookmark folders are a Premium-only feature on X)
+- Save in two taps from the iOS Share sheet, or by copying a post link
+- Custom titles, private notes, emoji and color for folders
+- Sort by date added, date modified, title, date posted or author; filter by date range, author, note or status
+- List, compact and grid layouts; search across post text, authors, titles and notes
+- No login: never connects to an X account, no Postfold account, no X API, no scraping
+- Post content comes only from X's public oEmbed service; the details screen shows X's official embed with "do not track" on
+- Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and collects no data
+- Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
+- Not affiliated with, endorsed by, or sponsored by X Corp.
+- Status: coming soon to the App Store
+
+---
+
+<!-- https://postfold.space/ -->
+
+For iPhone and iPad
+
+# Your saved posts, finally in folders.
+
+Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no tracking. Your library syncs through your private iCloud.
+
+Coming soon to the App Store
+
+- No login
+- No tracking
+- iCloud sync
+- iPhone & iPad
+- iOS 18+
+
+Bookmark folders on X are a Premium feature. **Postfold gives every saved post a home**, without signing in to anything.
+
+Features
+
+## Everything you save, organized your way
+
+Folders, titles, notes, sorting and search for the posts you want to come back to.
+
+### Save in two taps
+
+Share a post from the X app, pick a folder, done. Add a note right in the Share sheet.
+
+### A folder for every idea
+
+Create as many folders as you like, each with its own emoji and color, plus a live post count.
+
+### Make every save yours
+
+Give posts your own title and a private note, so you remember why you saved them.
+
+### Sort and filter your way
+
+Sort by date added, date modified, title, date posted or author. Filter by date range, author, note or status.
+
+### List, compact or grid
+
+Pick the layout that fits the folder. On iPad, folders, posts and details sit side by side.
+
+### Find anything fast
+
+Search across post text, authors, your titles and your notes.
+
+### Synced with iCloud
+
+Your library follows you across iPhone and iPad through your private iCloud. No sign-up.
+
+### Handles deleted posts
+
+If a post disappears from X, Postfold marks it Unavailable and keeps your link, title and note.
+
+### Copied a link? Save it
+
+Open Postfold after copying a post link and a banner offers to save it. The clipboard is only read when you tap Paste.
+
+How it works
+
+## Share, pick a folder, done
+
+### Tap Share on a post
+
+In the X app, tap Share on any post and choose Postfold. Or just copy the post's link.
+
+### Pick a folder
+
+Choose a folder (or create one), add a note if you like, and tap Save.
+
+### Find it later
+
+Open Postfold to sort, filter and search your saves. Tap Open in X to read the post in the X app.
+
+[Where your data goes](https://postfold.space/how-it-works/)
+
+Screenshots
+
+## Made for iPhone and iPad
+
+Swipe to see more. Tap a screenshot to enlarge it.
+
+Private by design
+
+## No login. No tracking. No server.
+
+Postfold is built so there is nothing to sign in to and nothing to collect.
+
+### Nothing to sign in to
+
+Postfold never asks for your X password and never connects to your X account. There is no Postfold account either.
+
+### Your iCloud, not our server
+
+Folders, posts and notes stay on your devices and in your private iCloud. The developer cannot see them.
+
+### No analytics or ads
+
+The app contains no analytics, advertising or tracking code. Post content comes only from X's public embed service.
+
+[Read the Privacy Policy](https://postfold.space/privacy/)
+
+FAQ
+
+## Questions, answered
+
+### Do I need to sign in to X or create an account?
+
+No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link.
+
+### Can Postfold import the bookmarks I already have on X?
+
+No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link.
+
+### How do I save a post?
+
+In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen.
+
+### Are my folders synced between my iPhone and iPad?
+
+Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device.
+
+### What happens when a post is deleted on X?
+
+Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept.
+
+### Does Postfold collect any data?
+
+No. The app has no analytics, no ads and no tracking, and the developer runs no server. Post content comes from X's public embed service, and your library lives on your devices and in your iCloud.
+
+### Does it work on iPad?
+
+Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see folders, posts and the post itself side by side.
+
+### How much does Postfold cost?
+
+Any price or in-app purchase is shown on the App Store listing before you download or buy.
+
+### Is Postfold made by X?
+
+No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp.
+
+## Give your saved posts a home
+
+Postfold for iPhone and iPad. Requires iOS 18 or later.
+
+Coming soon to the App Store
+
+---
+
+<!-- https://postfold.space/how-it-works/ -->
+
+# How Postfold works
+
+Postfold keeps your saved posts organized without an account, a login or a server. Here's what happens when you save, view and open a post, and where each piece of data goes.
+
+**Your iPhone or iPad** Stores your folders, titles, notes and a cached copy of each post.
+
+**Your private iCloud** Syncs your library between your devices. Only you can read it.
+
+**X's public embed service** Receives a post's link and returns its text and embed. Nothing else.
+
+There is no Postfold server. The developer never receives your data.
+
+## 1. Saving a post
+
+Tap Share on a post in the X app and choose Postfold, or copy the post's link and open Postfold. The Share sheet only shows your folders and a note field; the link, folder and note are passed to the main app on your device.
+
+When the app opens, it adds the post and asks X's public oEmbed service (`publish.x.com/oembed`) for it, sending just the post's link with "do not track" on. It caches the author, text and embed so your library loads instantly and works offline.
+
+## 2. Organizing
+
+Folders, custom titles, notes, sorting and filtering all happen on your device. Each folder remembers its own sort order and filters. The date a post was published is worked out from the post's ID, so no extra request is needed.
+
+## 3. Viewing a post
+
+The details screen shows X's official embedded post, exactly as X publishes it, with "do not track" on. Links inside the embed open in the X app or Safari, never in a browser inside Postfold.
+
+## 4. Keeping posts up to date
+
+From time to time, including in the background, Postfold re-checks a small batch of older saves with the same embed service. If a post was deleted or made private, it becomes Unavailable: the cached text is removed, and your link, title, note and folder stay.
+
+## 5. Syncing
+
+With iCloud on, your library syncs through the private CloudKit database in your own iCloud account. If two devices save the same post while offline, Postfold merges the duplicates when it next opens.
+
+## What Postfold never does
+
+| Postfold never… | Why it matters |
+|---|---|
+| asks you to log in to X or to Postfold | No password to leak, no account to manage. |
+| uses the X API or scrapes x.com | Only X's public, documented embed service is used. |
+| downloads images or videos | Media is shown by X's official embed, from X. |
+| opens posts in an in-app browser | Posts open in the X app or Safari, where you're already signed in. |
+| includes analytics, ads or trackers | Nothing about how you use the app is recorded or sent anywhere. |
+
+Want the technical details? Read about [the technology behind Postfold](https://postfold.space/technology/), or the full [Privacy Policy](https://postfold.space/privacy/).
+
+---
+
+<!-- https://postfold.space/technology/ -->
+
+# Technology
+
+Postfold is a native Apple app with no third-party code. Here is what it's built with and why.
+
+### SwiftUI & Swift 6
+
+A fully native interface for iPhone and iPad, written in Swift 6 with strict concurrency checking.
+
+### SwiftData + CloudKit
+
+Your library is stored with SwiftData and synced through the private CloudKit database in your iCloud.
+
+### No third-party SDKs
+
+Only Apple frameworks. No analytics, ads or crash-reporting libraries, so nothing ships that we didn't write.
+
+## Architecture
+
+- **App + Share Extension.** The Share Extension never opens the database. It reads a small list of your folders and drops each new save into an inbox in a shared App Group container. The main app imports the inbox when it opens. This keeps the extension fast and avoids two processes writing to the same store.
+- **Shared Swift package.** Link parsing, oEmbed parsing, models and the sort/filter query live in one local package used by both the app and the extension.
+- **CloudKit-friendly model.** Every field has a default and relationships are optional, as CloudKit requires. Duplicates created by offline saves on two devices are merged on launch.
+
+## Content from X, done by the book
+
+- **oEmbed only.** Post text and embed markup come from X's public oEmbed endpoint, requested with `dnt=true` and `omit_script=true`. Responses are parsed without loading HTML into a web view.
+- **Official embed.** The details screen renders the oEmbed HTML with X's `widgets.js` in a `WKWebView`. Every link tap is handed to iOS, which opens the X app or Safari.
+- **Post dates from IDs.** X post IDs encode their creation time, so Postfold can sort by date posted without any extra request.
+- **Polite re-checks.** A background refresh task re-checks a small batch of the oldest saves, one request at a time.
+
+## Privacy, verified
+
+- The app's privacy manifest declares no tracking, no tracking domains and no collected data.
+- Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.
+- The only network hosts the app talks to are X's embed services.
+
+## Requirements
+
+iPhone or iPad with iOS 18 or later. Some interface touches use iOS 26 features when available.
+
+---
+
+<!-- https://postfold.space/support/ -->
+
+# How can we help?
+
+Answers to common questions, plus a direct line to the developer.
+
+### Contact support
+
+Questions, feedback or feature ideas. Write to huynguyennovem@gmail.com.
+
+[Email us](mailto:huynguyennovem@gmail.com?subject=Postfold%20support)
+
+### Report a bug
+
+Tell us what happened and the steps to reproduce it. Include your device, iOS version and the app version from Settings › About.
+
+[Send a bug report](mailto:huynguyennovem@gmail.com?subject=Postfold%20bug%20report&body=Device%3A%20%0AiOS%20version%3A%20%0APostfold%20version%3A%20%0A%0AWhat%20happened%3A%20%0A%0ASteps%20to%20reproduce%3A%20)
+
+### Privacy questions
+
+Postfold collects no data. Read how it works, or email us about anything privacy-related.
+
+[Privacy Policy](https://postfold.space/privacy/)
+
+## Getting started
+
+1. Open Postfold once and create a few folders (or keep everything in Unsorted).
+2. In the X app, tap Share on a post, then Share via…, and choose Postfold.
+3. Pick a folder, add a note if you like, and tap Save.
+4. Open Postfold to see your saved post, sort, filter and search.
+
+Prefer copying links? Copy a post link anywhere, open Postfold, and tap Paste on the banner. You can also tap + and paste a link on the Add screen.
+
+## Troubleshooting
+
+### Postfold doesn't appear in the Share sheet
+
+Open Postfold once after installing it. Then, in the X app, tap Share, then Share via…, scroll the row of apps to the end, tap More, and turn on Postfold. You can drag it to the top of the list.
+
+### The Share sheet says my folders will appear later
+
+The Share sheet reads your folder list from the main app. Open Postfold once and your folders will show up the next time you share.
+
+### I saved a post but it isn't in the app yet
+
+Posts saved from the Share sheet are added the next time you open Postfold. If it still doesn't appear, check that you have an internet connection so the app can load the post.
+
+### Postfold says the link isn't a post
+
+Postfold saves links to single posts, such as x.com/name/status/1234567890. Links to profiles, lists or searches can't be saved.
+
+### A post shows as Unavailable
+
+The post was deleted, or its account is now private or suspended, so X no longer returns it. Your link, title, note and folder are kept. If you think it's a mistake, open the post and tap Reload Post.
+
+### My library isn't syncing between devices
+
+Make sure every device is signed in to the same Apple Account and that iCloud is turned on for Postfold. In Postfold, open Settings and check that Storage says iCloud. Sync can take a few minutes, and needs an internet connection.
+
+### The post details screen is blank
+
+The embedded post loads from X, so it needs an internet connection. Tap Reload Post to try again. You can always tap Open in X to read the post in the X app or Safari.
+
+## Still stuck?
+
+Email [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com). We usually reply within a few days. Postfold is made by one independent developer, so thank you for your patience.
+
+Looking for general questions? See the [FAQ on the home page](https://postfold.space/#faq).
+
+---
+
+<!-- https://postfold.space/privacy/ -->
+
+# Privacy Policy
+
+Last updated: November 7, 2026
+
+Postfold is built to collect nothing. This page explains exactly what the app stores, where it is stored, and which outside services it talks to.
+
+**In short:** Postfold has no account and no login. The developer runs no server and collects no personal data. The app contains no analytics, advertising or tracking code. Your library is stored on your devices and synced through your private iCloud. To show a post, the app asks X's public embed service for it.
+
+## 1. Who we are
+
+Postfold is an iPhone and iPad app developed by Huy Nguyen ("we", "us"). If you have any question about this policy, email [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com).
+
+## 2. Information we collect
+
+None. We do not operate servers for the app, and Postfold does not send us any information about you or how you use it. Specifically, the app has:
+
+- no user accounts and no sign-in, with X or with us;
+- no analytics, advertising, crash-reporting or other third-party SDKs;
+- no tracking, as defined by Apple's App Tracking Transparency, and no advertising identifier.
+
+This matches the app's App Store privacy label ("Data Not Collected") and its privacy manifest.
+
+## 3. What the app stores, and where
+
+To work, Postfold keeps your library on your device:
+
+- the links of the posts you save, and the author name and handle;
+- a cached copy of each post's text and embed markup, as returned by X's embed service;
+- your folders, custom titles and notes, and the dates you added or changed them;
+- your app settings (for example the default layout and folder).
+
+**iCloud sync.** If iCloud is turned on for your Apple Account, this library is synced through the private CloudKit database in *your* iCloud account, so it appears on your other devices. It is stored and protected by Apple under [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). We have no access to your iCloud data. If iCloud is off, the library stays on that device only.
+
+**Share extension.** When you save from the Share sheet, the link, folder and note are handed to the main app through a shared container on your device. Nothing leaves the device at this step.
+
+## 4. Connections to X
+
+Postfold never signs in to X, does not use the X API and does not scrape x.com. It contacts X only in these cases:
+
+- **Saving and re-checking a post.** The app sends the post's link to X's public oEmbed service at `publish.x.com/oembed`, with the "do not track" option turned on, and caches the result. It does this when you save a post and, from time to time, to check that saved posts still exist (including in the background, if Background App Refresh is on).
+- **Viewing a post.** The post details screen shows X's official embedded post. It loads X's embed script from `platform.twitter.com`, again with "do not track" on, and the post's images, videos and profile pictures come from X's servers.
+- **Opening a post.** Tapping Open in X hands the link to iOS, which opens it in the X app or in Safari. Postfold has no in-app browser.
+
+Like any web request, these connections let X see your IP address and basic device information. X handles that data under its own [Privacy Policy](https://x.com/en/privacy), not this one.
+
+## 5. Clipboard
+
+When you open the app with "Detect Copied Links" turned on, Postfold asks iOS whether the clipboard probably contains a web link. iOS answers yes or no without revealing the content. The clipboard is only read when you tap the system Paste button. You can turn this off in Postfold's Settings.
+
+## 6. Deleted posts
+
+If X reports that a post no longer exists or is no longer public, Postfold marks it Unavailable and deletes the cached text and embed. Your link, title, note and folder are kept until you delete them.
+
+## 7. This website
+
+This website is a static site hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+We use [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) to count page views on this website. It does not use cookies or local storage, does not track you across sites, and reports only aggregate statistics such as page views, referrers and country. It is not used in the app. Fonts and images are served from this site; we set no cookies.
+
+## 8. Your choices and rights
+
+- Delete a post or folder in the app to remove it from your devices and iCloud.
+- Delete the app to remove its local data. To remove the synced copy, manage Postfold's data in your iCloud storage settings on iPhone, iPad or Mac.
+- Turn off iCloud for Postfold to keep the library on one device.
+- Turn off Background App Refresh for Postfold in iOS Settings to stop background re-checks.
+
+Because we hold no personal data about you, there is nothing for us to access, export, correct or delete on our side. We do not sell or share personal information. If you have a privacy request or concern, email [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com) and we will reply.
+
+## 9. Children
+
+Postfold is not directed at children under 13, and it does not knowingly collect information from anyone, including children.
+
+## 10. Security
+
+All network connections use HTTPS. Data synced through iCloud is protected by Apple's iCloud security.
+
+## 11. Changes to this policy
+
+If the app's data practices change, for example if a new feature needs a new service, we will update this page and the date at the top before the change ships.
+
+## 12. Contact
+
+Huy Nguyen Email: [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com)
+
+---
+
+<!-- https://postfold.space/terms/ -->
+
+# Terms of Use
+
+Last updated: November 7, 2026
+
+These terms apply to the Postfold app and this website. Please read them before using Postfold.
+
+## 1. Agreement
+
+By downloading or using Postfold, you agree to these Terms of Use and to our [Privacy Policy](https://postfold.space/privacy/). Postfold is licensed, not sold, to you through the Apple App Store. Your use is also governed by Apple's [Licensed Application End User License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) (the "Standard EULA"). If these terms and the Standard EULA conflict, the Standard EULA applies.
+
+## 2. What Postfold does
+
+Postfold lets you save links to public posts from X, organize them in folders, and add your own titles and notes. Post content is shown through X's public oEmbed service and official embed. Postfold does not sign in to X, does not use the X API and does not download images or videos.
+
+## 3. Not affiliated with X
+
+Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. "X" is a trademark of X Corp. and is used only to describe the content Postfold works with.
+
+## 4. Content from X
+
+Posts belong to their authors and are provided by X. We do not control, review or endorse them. Your use of X's content and services, including the X app and website, is subject to [X's Terms of Service](https://x.com/en/tos). Postfold relies on X's public services; if X changes or stops them, some features may stop working, and posts deleted or made private on X become Unavailable in the app.
+
+## 5. Your content and your data
+
+Your folders, titles and notes are yours. They are stored on your devices and, if you use iCloud, in your iCloud account. We do not have a copy and cannot recover lost data, so keep iCloud or device backups if your library matters to you. You are responsible for the notes you write and the posts you choose to save.
+
+## 6. Acceptable use
+
+Use Postfold only for lawful, personal purposes. Do not use it to break X's terms, to infringe others' rights, or to attempt to reverse engineer, overload or misuse the app or the services it connects to, except where the law allows.
+
+## 7. Purchases
+
+If Postfold offers a paid version, in-app purchases or subscriptions, they are sold and billed by Apple through the App Store. Prices are shown before you buy. Subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period, in your Apple Account settings. Refunds are handled by Apple under its policies.
+
+## 8. Intellectual property
+
+The Postfold name, icon, app design and this website are owned by Huy Nguyen. These terms do not give you any right to use them beyond using the app.
+
+## 9. No warranty
+
+Postfold is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. We do not guarantee that the app will be error-free, that it will always be able to load posts, or that it will stay compatible with X's services.
+
+## 10. Limitation of liability
+
+To the maximum extent permitted by law, Huy Nguyen is not liable for any indirect, incidental or consequential damages, or for any loss of data, arising from your use of, or inability to use, Postfold. Nothing in these terms limits rights you have under consumer protection laws that cannot be waived.
+
+## 11. Changes and termination
+
+We may update these terms. The date at the top shows the latest version, and continuing to use Postfold after a change means you accept it. You can stop using Postfold at any time by deleting it.
+
+## 12. Contact
+
+Questions about these terms: [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com)

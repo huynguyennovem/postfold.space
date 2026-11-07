@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Postfold</title>
+  <meta name="description" content="Postfold collects no data: no account, no analytics, no tracking. Learn what the app stores on your device and in your iCloud, and when it contacts X's embed service.">
+  <link rel="canonical" href="https://postfold.space/privacy/">
+  <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/privacy/index.md">
+  <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1119" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Postfold">
+  <meta property="og:title" content="Privacy Policy | Postfold">
+  <meta property="og:description" content="Postfold collects no data: no account, no analytics, no tracking. Learn what the app stores on your device and in your iCloud, and when it contacts X's embed service.">
+  <meta property="og:url" content="https://postfold.space/privacy/">
+  <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Postfold app icon and the All Posts screen on iPhone">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../" aria-label="Postfold home">
+        <picture>
+          <source srcset="../assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+          <source srcset="../assets/images/app-icon-light.webp" type="image/webp">
+          <img src="../assets/images/app-icon-light.png" alt="" width="34" height="34">
+        </picture>
+        <span>Postfold</span>
+      </a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="../#features">Features</a>
+        <a href="../how-it-works/">How it works</a>
+        <a href="../#screenshots">Screenshots</a>
+        <a href="../support/">Support</a>
+        <a class="btn btn-primary btn-sm" href="../#download">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+          <p class="meta">Last updated: November 7, 2026</p>
+        <p>Postfold is built to collect nothing. This page explains exactly what the app stores, where it is stored, and which outside services it talks to.</p>
+      </div>
+    </div>
+    <div class="container prose">
+      <div class="callout">
+        <p><strong>In short:</strong> Postfold has no account and no login. The developer runs no server and collects no personal data. The app contains no analytics, advertising or tracking code. Your library is stored on your devices and synced through your private iCloud. To show a post, the app asks X's public embed service for it.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>Postfold is an iPhone and iPad app developed by Huy Nguyen ("we", "us"). If you have any question about this policy, email <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a>.</p>
+
+      <h2>2. Information we collect</h2>
+      <p>None. We do not operate servers for the app, and Postfold does not send us any information about you or how you use it. Specifically, the app has:</p>
+      <ul>
+        <li>no user accounts and no sign-in, with X or with us;</li>
+        <li>no analytics, advertising, crash-reporting or other third-party SDKs;</li>
+        <li>no tracking, as defined by Apple's App Tracking Transparency, and no advertising identifier.</li>
+      </ul>
+      <p>This matches the app's App Store privacy label ("Data Not Collected") and its privacy manifest.</p>
+
+      <h2>3. What the app stores, and where</h2>
+      <p>To work, Postfold keeps your library on your device:</p>
+      <ul>
+        <li>the links of the posts you save, and the author name and handle;</li>
+        <li>a cached copy of each post's text and embed markup, as returned by X's embed service;</li>
+        <li>your folders, custom titles and notes, and the dates you added or changed them;</li>
+        <li>your app settings (for example the default layout and folder).</li>
+      </ul>
+      <p><strong>iCloud sync.</strong> If iCloud is turned on for your Apple Account, this library is synced through the private CloudKit database in <em>your</em> iCloud account, so it appears on your other devices. It is stored and protected by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. We have no access to your iCloud data. If iCloud is off, the library stays on that device only.</p>
+      <p><strong>Share extension.</strong> When you save from the Share sheet, the link, folder and note are handed to the main app through a shared container on your device. Nothing leaves the device at this step.</p>
+
+      <h2>4. Connections to X</h2>
+      <p>Postfold never signs in to X, does not use the X API and does not scrape x.com. It contacts X only in these cases:</p>
+      <ul>
+        <li><strong>Saving and re-checking a post.</strong> The app sends the post's link to X's public oEmbed service at <code>publish.x.com/oembed</code>, with the "do not track" option turned on, and caches the result. It does this when you save a post and, from time to time, to check that saved posts still exist (including in the background, if Background App Refresh is on).</li>
+        <li><strong>Viewing a post.</strong> The post details screen shows X's official embedded post. It loads X's embed script from <code>platform.twitter.com</code>, again with "do not track" on, and the post's images, videos and profile pictures come from X's servers.</li>
+        <li><strong>Opening a post.</strong> Tapping Open in X hands the link to iOS, which opens it in the X app or in Safari. Postfold has no in-app browser.</li>
+      </ul>
+      <p>Like any web request, these connections let X see your IP address and basic device information. X handles that data under its own <a href="https://x.com/en/privacy" rel="noopener">Privacy Policy</a>, not this one.</p>
+
+      <h2>5. Clipboard</h2>
+      <p>When you open the app with "Detect Copied Links" turned on, Postfold asks iOS whether the clipboard probably contains a web link. iOS answers yes or no without revealing the content. The clipboard is only read when you tap the system Paste button. You can turn this off in Postfold's Settings.</p>
+
+      <h2>6. Deleted posts</h2>
+      <p>If X reports that a post no longer exists or is no longer public, Postfold marks it Unavailable and deletes the cached text and embed. Your link, title, note and folder are kept until you delete them.</p>
+
+      <h2>7. This website</h2>
+      <p>This website is a static site hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.</p>
+      <p>We use <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a> to count page views on this website. It does not use cookies or local storage, does not track you across sites, and reports only aggregate statistics such as page views, referrers and country. It is not used in the app. Fonts and images are served from this site; we set no cookies.</p>
+
+      <h2>8. Your choices and rights</h2>
+      <ul>
+        <li>Delete a post or folder in the app to remove it from your devices and iCloud.</li>
+        <li>Delete the app to remove its local data. To remove the synced copy, manage Postfold's data in your iCloud storage settings on iPhone, iPad or Mac.</li>
+        <li>Turn off iCloud for Postfold to keep the library on one device.</li>
+        <li>Turn off Background App Refresh for Postfold in iOS Settings to stop background re-checks.</li>
+      </ul>
+      <p>Because we hold no personal data about you, there is nothing for us to access, export, correct or delete on our side. We do not sell or share personal information. If you have a privacy request or concern, email <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a> and we will reply.</p>
+
+      <h2>9. Children</h2>
+      <p>Postfold is not directed at children under 13, and it does not knowingly collect information from anyone, including children.</p>
+
+      <h2>10. Security</h2>
+      <p>All network connections use HTTPS. Data synced through iCloud is protected by Apple's iCloud security.</p>
+
+      <h2>11. Changes to this policy</h2>
+      <p>If the app's data practices change, for example if a new feature needs a new service, we will update this page and the date at the top before the change ships.</p>
+
+      <h2>12. Contact</h2>
+      <p>Huy Nguyen<br>Email: <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="../">
+            <picture>
+              <source srcset="../assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+              <source srcset="../assets/images/app-icon-light.webp" type="image/webp">
+              <img src="../assets/images/app-icon-light.png" alt="" width="34" height="34" loading="lazy">
+            </picture>
+            <span>Postfold</span>
+          </a>
+          <p>Save posts from X into your own folders. No login, no tracking. For iPhone and iPad.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="../#features">Features</a></li>
+            <li><a href="../how-it-works/">How it works</a></li>
+            <li><a href="../technology/">Technology</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="../support/">Support</a></li>
+            <li><a href="mailto:huynguyennovem@gmail.com">Email us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. X is a trademark of X Corp.</p>
+        <p>Apple, iPhone, iPad, iCloud and App Store are trademarks of Apple Inc.</p>
+        <p>&copy; <span data-year>2026</span> Huy Nguyen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

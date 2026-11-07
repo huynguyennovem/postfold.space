@@ -1,0 +1,40 @@
+# Postfold
+
+> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind, no analytics and no tracking, and it syncs through the user's private iCloud. Requires iOS 18 or later.
+
+This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
+
+Key facts:
+- Saves posts from X into user-created folders (bookmark folders are a Premium-only feature on X)
+- Save in two taps from the iOS Share sheet, or by copying a post link
+- Custom titles, private notes, emoji and color for folders
+- Sort by date added, date modified, title, date posted or author; filter by date range, author, note or status
+- List, compact and grid layouts; search across post text, authors, titles and notes
+- No login: never connects to an X account, no Postfold account, no X API, no scraping
+- Post content comes only from X's public oEmbed service; the details screen shows X's official embed with "do not track" on
+- Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and collects no data
+- Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
+- Not affiliated with, endorsed by, or sponsored by X Corp.
+- Status: coming soon to the App Store
+
+---
+
+## Product
+
+- [Home](https://postfold.space/index.md): Overview, features, screenshots and FAQ
+- [How it works](https://postfold.space/how-it-works/index.md): What happens when you save, view and open a post, and where data goes
+- [Technology](https://postfold.space/technology/index.md): SwiftUI, Swift 6, SwiftData, CloudKit, no third-party SDKs
+
+## Support
+
+- [Support](https://postfold.space/support/index.md): Getting started, troubleshooting and contact
+- [Email](mailto:huynguyennovem@gmail.com): Support and privacy questions
+
+## Legal
+
+- [Privacy Policy](https://postfold.space/privacy/index.md): No data collected; what is stored on device and in iCloud; connections to X's embed service
+- [Terms of Use](https://postfold.space/terms/index.md): Terms for using the Postfold app
+
+## Optional
+
+- [Full context](https://postfold.space/llms-full.txt): All pages above in one file

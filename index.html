@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postfold: Save posts from X into folders</title>
+  <meta name="description" content="Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no tracking, synced with your private iCloud. For iPhone and iPad.">
+  <link rel="canonical" href="https://postfold.space/">
+  <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/index.md">
+  <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1119" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Postfold">
+  <meta property="og:title" content="Postfold: Save posts from X into folders">
+  <meta property="og:description" content="Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no tracking, synced with your private iCloud. For iPhone and iPad.">
+  <meta property="og:url" content="https://postfold.space/">
+  <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Postfold app icon and the All Posts screen on iPhone">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Postfold","description":"Save posts from X into folders with your own titles and notes. No login, no tracking, synced with iCloud.","operatingSystem":"iOS 18.0 or later","applicationCategory":"ProductivityApplication","url":"https://postfold.space/","image":"https://postfold.space/assets/images/app-icon-512.png","author":{"@type":"Person","name":"Huy Nguyen","email":"huynguyennovem@gmail.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to sign in to X or create an account?","acceptedAnswer":{"@type":"Answer","text":"No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link."}},{"@type":"Question","name":"Can Postfold import the bookmarks I already have on X?","acceptedAnswer":{"@type":"Answer","text":"No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link."}},{"@type":"Question","name":"How do I save a post?","acceptedAnswer":{"@type":"Answer","text":"In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen."}},{"@type":"Question","name":"Are my folders synced between my iPhone and iPad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device."}},{"@type":"Question","name":"What happens when a post is deleted on X?","acceptedAnswer":{"@type":"Answer","text":"Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept."}},{"@type":"Question","name":"Does Postfold collect any data?","acceptedAnswer":{"@type":"Answer","text":"No. The app has no analytics, no ads and no tracking, and the developer runs no server. Post content comes from X's public embed service, and your library lives on your devices and in your iCloud."}},{"@type":"Question","name":"Does it work on iPad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see folders, posts and the post itself side by side."}},{"@type":"Question","name":"How much does Postfold cost?","acceptedAnswer":{"@type":"Answer","text":"Any price or in-app purchase is shown on the App Store listing before you download or buy."}},{"@type":"Question","name":"Is Postfold made by X?","acceptedAnswer":{"@type":"Answer","text":"No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp."}}]}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./" aria-label="Postfold home">
+        <picture>
+          <source srcset="assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+          <source srcset="assets/images/app-icon-light.webp" type="image/webp">
+          <img src="assets/images/app-icon-light.png" alt="" width="34" height="34">
+        </picture>
+        <span>Postfold</span>
+      </a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="./#features">Features</a>
+        <a href="how-it-works/">How it works</a>
+        <a href="./#screenshots">Screenshots</a>
+        <a href="support/">Support</a>
+        <a class="btn btn-primary btn-sm" href="./#download">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <picture>
+            <source srcset="assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+            <source srcset="assets/images/app-icon-light.webp" type="image/webp">
+            <img class="hero-icon" src="assets/images/app-icon-light.png" alt="Postfold app icon: a post card tucked into a folder" width="84" height="84" fetchpriority="high">
+          </picture>
+          <p class="eyebrow">For iPhone and iPad</p>
+          <h1>Your saved posts, <span class="accent">finally in folders.</span></h1>
+          <p class="lead">Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no tracking. Your library syncs through your private iCloud.</p>
+          <div class="store-row">
+            <a class="store-badge" data-store="ios" aria-disabled="true" tabindex="-1">
+              <picture>
+                <source srcset="assets/images/App_Store_Badge.webp" type="image/webp">
+                <img src="assets/images/App_Store_Badge.png" alt="Download Postfold on the App Store" width="180" height="60">
+              </picture>
+            </a>
+            <span class="store-note" data-store-note>Coming soon to the App Store</span>
+          </div>
+          <ul class="chips" aria-label="Quick facts">
+            <li>No login</li>
+            <li>No tracking</li>
+            <li>iCloud sync</li>
+            <li>iPhone &amp; iPad</li>
+            <li>iOS 18+</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img class="shot shot-back" src="assets/images/screenshots/iphone-03-sidebar.webp" alt="" width="600" height="1304" decoding="async">
+          <img class="shot" src="assets/images/screenshots/iphone-01-list.webp" alt="Postfold on iPhone: the All Posts list with titles, authors and folder tags" width="600" height="1304" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="container">
+        <p>Bookmark folders on X are a Premium feature. <strong>Postfold gives every saved post a home</strong>, without signing in to anything.</p>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Features</p>
+          <h2>Everything you save, organized your way</h2>
+          <p>Folders, titles, notes, sorting and search for the posts you want to come back to.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></span>
+            <h3>Save in two taps</h3>
+            <p>Share a post from the X app, pick a folder, done. Add a note right in the Share sheet.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+            <h3>A folder for every idea</h3>
+            <p>Create as many folders as you like, each with its own emoji and color, plus a live post count.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+            <h3>Make every save yours</h3>
+            <p>Give posts your own title and a private note, so you remember why you saved them.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/></svg></span>
+            <h3>Sort and filter your way</h3>
+            <p>Sort by date added, date modified, title, date posted or author. Filter by date range, author, note or status.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <h3>List, compact or grid</h3>
+            <p>Pick the layout that fits the folder. On iPad, folders, posts and details sit side by side.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+            <h3>Find anything fast</h3>
+            <p>Search across post text, authors, your titles and your notes.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8Z"/></svg></span>
+            <h3>Synced with iCloud</h3>
+            <p>Your library follows you across iPhone and iPad through your private iCloud. No sign-up.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 4v5h-5"/></svg></span>
+            <h3>Handles deleted posts</h3>
+            <p>If a post disappears from X, Postfold marks it Unavailable and keeps your link, title and note.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="4" rx="1"/><path d="M17 5h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1"/></svg></span>
+            <h3>Copied a link? Save it</h3>
+            <p>Open Postfold after copying a post link and a banner offers to save it. The clipboard is only read when you tap Paste.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section-alt">
+      <div class="container steps-layout">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>Share, pick a folder, done</h2>
+          <ol class="steps">
+            <li>
+              <h3>Tap Share on a post</h3>
+              <p>In the X app, tap Share on any post and choose Postfold. Or just copy the post's link.</p>
+            </li>
+            <li>
+              <h3>Pick a folder</h3>
+              <p>Choose a folder (or create one), add a note if you like, and tap Save.</p>
+            </li>
+            <li>
+              <h3>Find it later</h3>
+              <p>Open Postfold to sort, filter and search your saves. Tap Open in X to read the post in the X app.</p>
+            </li>
+          </ol>
+          <p class="steps-more"><a class="btn btn-secondary" href="how-it-works/">Where your data goes</a></p>
+        </div>
+        <div class="steps-visual">
+          <img src="assets/images/screenshots/iphone-02-share.webp" alt="The Save to Postfold sheet with a folder list and a note field" width="600" height="1304" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Screenshots</p>
+          <h2>Made for iPhone and iPad</h2>
+        </div>
+        <div class="tabs-wrap">
+          <div class="tabs" role="tablist" aria-label="Device">
+            <button class="tab" type="button" role="tab" id="tab-iphone" aria-selected="true" aria-controls="gallery-iphone">iPhone</button>
+            <button class="tab" type="button" role="tab" id="tab-ipad" aria-selected="false" aria-controls="gallery-ipad" tabindex="-1">iPad</button>
+          </div>
+        </div>
+        <div class="gallery gallery-phone" id="gallery-iphone" role="tabpanel" aria-labelledby="tab-iphone">
+            <button type="button" data-zoom aria-label="Enlarge screenshot: All Posts list with titles, authors, dates and folder tags">
+              <img src="assets/images/screenshots/iphone-01-list.webp" alt="All Posts list with titles, authors, dates and folder tags" width="600" height="1304" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Saving a post from the Share sheet: pick a folder and add a note">
+              <img src="assets/images/screenshots/iphone-02-share.webp" alt="Saving a post from the Share sheet: pick a folder and add a note" width="600" height="1304" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Sidebar with emoji folders and live post counts">
+              <img src="assets/images/screenshots/iphone-03-sidebar.webp" alt="Sidebar with emoji folders and live post counts" width="600" height="1304" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Sort menu: date added, date modified, title, date posted, author">
+              <img src="assets/images/screenshots/iphone-04-sort.webp" alt="Sort menu: date added, date modified, title, date posted, author" width="600" height="1304" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Post details with a custom title, note and folder">
+              <img src="assets/images/screenshots/iphone-05-detail.webp" alt="Post details with a custom title, note and folder" width="600" height="1304" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Settings: copied-link detection, default layout and iCloud storage">
+              <img src="assets/images/screenshots/iphone-06-settings.webp" alt="Settings: copied-link detection, default layout and iCloud storage" width="600" height="1304" loading="lazy" decoding="async">
+            </button>
+        </div>
+        <div class="gallery gallery-tablet" id="gallery-ipad" role="tabpanel" aria-labelledby="tab-ipad" hidden>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: iPad split view with folders, posts and post details side by side">
+              <img src="assets/images/screenshots/ipad-01-split.webp" alt="iPad split view with folders, posts and post details side by side" width="1400" height="1050" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Posts in a grid layout on iPad">
+              <img src="assets/images/screenshots/ipad-02-grid.webp" alt="Posts in a grid layout on iPad" width="1400" height="1050" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Filters for date, author, note and status on iPad">
+              <img src="assets/images/screenshots/ipad-03-filters.webp" alt="Filters for date, author, note and status on iPad" width="1400" height="1050" loading="lazy" decoding="async">
+            </button>
+            <button type="button" data-zoom aria-label="Enlarge screenshot: Settings on iPad">
+              <img src="assets/images/screenshots/ipad-04-settings.webp" alt="Settings on iPad" width="1400" height="1050" loading="lazy" decoding="async">
+            </button>
+        </div>
+        <p class="gallery-hint">Swipe to see more. Tap a screenshot to enlarge it.</p>
+      </div>
+    </section>
+
+    <section id="privacy" class="band">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Private by design</p>
+          <h2>No login. No tracking. No server.</h2>
+          <p>Postfold is built so there is nothing to sign in to and nothing to collect.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 13-6.2"/><path d="m17 17 4 4m0-4-4 4"/></svg></span>
+            <h3>Nothing to sign in to</h3>
+            <p>Postfold never asks for your X password and never connects to your X account. There is no Postfold account either.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span>
+            <h3>Your iCloud, not our server</h3>
+            <p>Folders, posts and notes stay on your devices and in your private iCloud. The developer cannot see them.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10 10 0 0 1 12 5c5 0 9 4.5 10 7-.4 1-1.2 2.3-2.4 3.6M6.6 6.6C4.3 8 2.6 10.3 2 12c1 2.5 5 7 10 7 1.8 0 3.4-.6 4.8-1.4"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>
+            <h3>No analytics or ads</h3>
+            <p>The app contains no analytics, advertising or tracking code. Post content comes only from X's public embed service.</p>
+          </article>
+        </div>
+        <div class="band-cta">
+          <a class="btn btn-secondary" href="privacy/">Read the Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions, answered</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Do I need to sign in to X or create an account?</summary>
+            <p>No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link.</p>
+          </details>
+          <details>
+            <summary>Can Postfold import the bookmarks I already have on X?</summary>
+            <p>No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link.</p>
+          </details>
+          <details>
+            <summary>How do I save a post?</summary>
+            <p>In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen.</p>
+          </details>
+          <details>
+            <summary>Are my folders synced between my iPhone and iPad?</summary>
+            <p>Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device.</p>
+          </details>
+          <details>
+            <summary>What happens when a post is deleted on X?</summary>
+            <p>Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept.</p>
+          </details>
+          <details>
+            <summary>Does Postfold collect any data?</summary>
+            <p>No. The app has no analytics, no ads and no tracking, and the developer runs no server. Post content comes from X's public embed service, and your library lives on your devices and in your iCloud.</p>
+          </details>
+          <details>
+            <summary>Does it work on iPad?</summary>
+            <p>Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see folders, posts and the post itself side by side.</p>
+          </details>
+          <details>
+            <summary>How much does Postfold cost?</summary>
+            <p>Any price or in-app purchase is shown on the App Store listing before you download or buy.</p>
+          </details>
+          <details>
+            <summary>Is Postfold made by X?</summary>
+            <p>No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="cta">
+      <div class="container">
+        <div class="cta-card on-dark">
+          <picture>
+            <source srcset="assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+            <source srcset="assets/images/app-icon-light.webp" type="image/webp">
+            <img class="cta-icon" src="assets/images/app-icon-light.png" alt="" width="96" height="96" loading="lazy">
+          </picture>
+          <h2>Give your saved posts a home</h2>
+          <p>Postfold for iPhone and iPad. Requires iOS 18 or later.</p>
+          <div class="store-row">
+            <a class="store-badge" data-store="ios" aria-disabled="true" tabindex="-1">
+              <picture>
+                <source srcset="assets/images/App_Store_Badge.webp" type="image/webp">
+                <img src="assets/images/App_Store_Badge.png" alt="Download Postfold on the App Store" width="180" height="60">
+              </picture>
+            </a>
+            <span class="store-note" data-store-note>Coming soon to the App Store</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot">
+      <button class="close" type="button" aria-label="Close">&times;</button>
+      <img alt="">
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="./">
+            <picture>
+              <source srcset="assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+              <source srcset="assets/images/app-icon-light.webp" type="image/webp">
+              <img src="assets/images/app-icon-light.png" alt="" width="34" height="34" loading="lazy">
+            </picture>
+            <span>Postfold</span>
+          </a>
+          <p>Save posts from X into your own folders. No login, no tracking. For iPhone and iPad.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="./#features">Features</a></li>
+            <li><a href="how-it-works/">How it works</a></li>
+            <li><a href="technology/">Technology</a></li>
+            <li><a href="./#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="support/">Support</a></li>
+            <li><a href="mailto:huynguyennovem@gmail.com">Email us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy/">Privacy Policy</a></li>
+            <li><a href="terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. X is a trademark of X Corp.</p>
+        <p>Apple, iPhone, iPad, iCloud and App Store are trademarks of Apple Inc.</p>
+        <p>&copy; <span data-year>2026</span> Huy Nguyen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

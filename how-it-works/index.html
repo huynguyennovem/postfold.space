@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works | Postfold</title>
+  <meta name="description" content="How Postfold saves posts from X without a login: what happens when you save, view and open a post, and where your data goes.">
+  <link rel="canonical" href="https://postfold.space/how-it-works/">
+  <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/how-it-works/index.md">
+  <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1119" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Postfold">
+  <meta property="og:title" content="How it works | Postfold">
+  <meta property="og:description" content="How Postfold saves posts from X without a login: what happens when you save, view and open a post, and where your data goes.">
+  <meta property="og:url" content="https://postfold.space/how-it-works/">
+  <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Postfold app icon and the All Posts screen on iPhone">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../" aria-label="Postfold home">
+        <picture>
+          <source srcset="../assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+          <source srcset="../assets/images/app-icon-light.webp" type="image/webp">
+          <img src="../assets/images/app-icon-light.png" alt="" width="34" height="34">
+        </picture>
+        <span>Postfold</span>
+      </a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="../#features">Features</a>
+        <a href="../how-it-works/" aria-current="page">How it works</a>
+        <a href="../#screenshots">Screenshots</a>
+        <a href="../support/">Support</a>
+        <a class="btn btn-primary btn-sm" href="../#download">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>How Postfold works</h1>
+        <p>Postfold keeps your saved posts organized without an account, a login or a server. Here's what happens when you save, view and open a post, and where each piece of data goes.</p>
+      </div>
+    </div>
+    <div class="container prose">
+      <div class="flow" aria-label="Data flow">
+        <div class="flow-node is-you">
+          <strong>Your iPhone or iPad</strong>
+          <span>Stores your folders, titles, notes and a cached copy of each post.</span>
+        </div>
+        <div class="flow-node">
+          <strong>Your private iCloud</strong>
+          <span>Syncs your library between your devices. Only you can read it.</span>
+        </div>
+        <div class="flow-node">
+          <strong>X's public embed service</strong>
+          <span>Receives a post's link and returns its text and embed. Nothing else.</span>
+        </div>
+      </div>
+      <p class="meta">There is no Postfold server. The developer never receives your data.</p>
+
+      <h2>1. Saving a post</h2>
+      <p>Tap Share on a post in the X app and choose Postfold, or copy the post's link and open Postfold. The Share sheet only shows your folders and a note field; the link, folder and note are passed to the main app on your device.</p>
+      <p>When the app opens, it adds the post and asks X's public oEmbed service (<code>publish.x.com/oembed</code>) for it, sending just the post's link with "do not track" on. It caches the author, text and embed so your library loads instantly and works offline.</p>
+
+      <h2>2. Organizing</h2>
+      <p>Folders, custom titles, notes, sorting and filtering all happen on your device. Each folder remembers its own sort order and filters. The date a post was published is worked out from the post's ID, so no extra request is needed.</p>
+
+      <h2>3. Viewing a post</h2>
+      <p>The details screen shows X's official embedded post, exactly as X publishes it, with "do not track" on. Links inside the embed open in the X app or Safari, never in a browser inside Postfold.</p>
+
+      <h2>4. Keeping posts up to date</h2>
+      <p>From time to time, including in the background, Postfold re-checks a small batch of older saves with the same embed service. If a post was deleted or made private, it becomes Unavailable: the cached text is removed, and your link, title, note and folder stay.</p>
+
+      <h2>5. Syncing</h2>
+      <p>With iCloud on, your library syncs through the private CloudKit database in your own iCloud account. If two devices save the same post while offline, Postfold merges the duplicates when it next opens.</p>
+
+      <h2>What Postfold never does</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Postfold never…</th><th scope="col">Why it matters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>asks you to log in to X or to Postfold</td><td>No password to leak, no account to manage.</td></tr>
+            <tr><td>uses the X API or scrapes x.com</td><td>Only X's public, documented embed service is used.</td></tr>
+            <tr><td>downloads images or videos</td><td>Media is shown by X's official embed, from X.</td></tr>
+            <tr><td>opens posts in an in-app browser</td><td>Posts open in the X app or Safari, where you're already signed in.</td></tr>
+            <tr><td>includes analytics, ads or trackers</td><td>Nothing about how you use the app is recorded or sent anywhere.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Want the technical details? Read about <a href="../technology/">the technology behind Postfold</a>, or the full <a href="../privacy/">Privacy Policy</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="../">
+            <picture>
+              <source srcset="../assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
+              <source srcset="../assets/images/app-icon-light.webp" type="image/webp">
+              <img src="../assets/images/app-icon-light.png" alt="" width="34" height="34" loading="lazy">
+            </picture>
+            <span>Postfold</span>
+          </a>
+          <p>Save posts from X into your own folders. No login, no tracking. For iPhone and iPad.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="../#features">Features</a></li>
+            <li><a href="../how-it-works/">How it works</a></li>
+            <li><a href="../technology/">Technology</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="../support/">Support</a></li>
+            <li><a href="mailto:huynguyennovem@gmail.com">Email us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. X is a trademark of X Corp.</p>
+        <p>Apple, iPhone, iPad, iCloud and App Store are trademarks of Apple Inc.</p>
+        <p>&copy; <span data-year>2026</span> Huy Nguyen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
