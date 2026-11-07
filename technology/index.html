@@ -72,7 +72,7 @@
           <article class="card">
             <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></span>
             <h3>No third-party SDKs</h3>
-            <p>Only Apple frameworks. No analytics, ads or crash-reporting libraries, so nothing ships that we didn't write.</p>
+            <p>Only Apple frameworks. No ads, analytics or crash-reporting libraries from other companies, so nothing ships that we didn't write.</p>
           </article>
       </div>
     </div>
@@ -94,7 +94,8 @@
 
       <h2>Privacy, verified</h2>
       <ul>
-        <li>The app's privacy manifest declares no tracking, no tracking domains and no collected data.</li>
+        <li>The app's privacy manifest declares no tracking and no tracking domains.</li>
+        <li>Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.</li>
         <li>Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.</li>
         <li>The only network hosts the app talks to are X's embed services.</li>
       </ul>

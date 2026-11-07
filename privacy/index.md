@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy | Postfold"
-description: "Postfold collects no data: no account, no analytics, no tracking. Learn what the app stores on your device and in your iCloud, and when it contacts X's embed service."
+description: "Postfold collects no personal data: no account, no ads, no tracking. Learn what the app stores on your device and in your iCloud, when it contacts X, and how anonymous crash reports work."
 url: "https://postfold.space/privacy/"
 ---
 
@@ -8,9 +8,9 @@ url: "https://postfold.space/privacy/"
 
 Last updated: November 7, 2026
 
-Postfold is built to collect nothing. This page explains exactly what the app stores, where it is stored, and which outside services it talks to.
+Postfold is built to collect as little as possible. This page explains what the app stores, where it is stored, which outside services it talks to, and what crash and usage information reaches us.
 
-**In short:** Postfold has no account and no login. The developer runs no server and collects no personal data. The app contains no analytics, advertising or tracking code. Your library is stored on your devices and synced through your private iCloud. To show a post, the app asks X's public embed service for it.
+**In short:** Postfold has no account and no login. We never see the posts, links, titles, notes or folders you save: they stay on your devices and in your private iCloud. The app has no advertising, no third-party analytics and no tracking. To find and fix problems, we receive anonymous crash reports and usage statistics through Apple's built-in tools, and you can turn them off. To show a post, the app asks X's public embed service for it.
 
 ## 1. Who we are
 
@@ -18,13 +18,13 @@ Postfold is an iPhone and iPad app developed by Huy Nguyen ("we", "us"). If you 
 
 ## 2. Information we collect
 
-None. We do not operate servers for the app, and Postfold does not send us any information about you or how you use it. Specifically, the app has:
+We do not collect personal information, and we never receive the content of your library. We do not operate servers for the app. Specifically, the app has:
 
 - no user accounts and no sign-in, with X or with us;
-- no analytics, advertising, crash-reporting or other third-party SDKs;
+- no advertising, and no third-party analytics or crash-reporting SDKs;
 - no tracking, as defined by Apple's App Tracking Transparency, and no advertising identifier.
 
-This matches the app's App Store privacy label ("Data Not Collected") and its privacy manifest.
+The only information about how the app runs that reaches us is anonymous crash reports, diagnostics and usage statistics provided by Apple, described in section 5.
 
 ## 3. What the app stores, and where
 
@@ -49,41 +49,54 @@ Postfold never signs in to X, does not use the X API and does not scrape x.com. 
 
 Like any web request, these connections let X see your IP address and basic device information. X handles that data under its own [Privacy Policy](https://x.com/en/privacy), not this one.
 
-## 5. Clipboard
+## 5. Crash reports and usage statistics
+
+To see when Postfold crashes or runs slowly, and how many people use it, we rely on tools built into iOS and provided by Apple. We do not add any third-party service for this.
+
+- **Crash reports and diagnostics.** If you turned on *Share With App Developers* in iOS (Settings › Privacy & Security › Analytics & Improvements), Apple sends us crash logs and reports about hangs, performance, energy and disk use for Postfold, through Xcode and App Store Connect.
+- **Usage statistics.** App Store Connect shows us aggregated figures such as installs, sessions, active devices, retention and crash counts, for people who agreed to share analytics with app developers. We see totals, not individuals.
+- **On-device diagnostics.** Through Apple's MetricKit framework, iOS also gives Postfold daily summaries of how the app performed on your device, such as launch time, memory use, hangs and crash call stacks. Postfold uses them to spot problems. They stay on your device and Postfold does not upload them.
+
+These reports contain technical information only, such as the device model, iOS version, app version and the call stack of the app's own code. They never include the posts, links, titles, notes or folders you save, and Apple does not tell us who you are. Apple handles this data under its [Privacy Policy](https://www.apple.com/legal/privacy/).
+
+**How to turn it off.** Turn off the crash and diagnostics option in Postfold's Settings to stop Postfold from collecting on-device diagnostics. To stop sharing crash and usage data with all app developers, turn off *Share With App Developers* in iOS Settings › Privacy & Security › Analytics & Improvements.
+
+## 6. Clipboard
 
 When you open the app with "Detect Copied Links" turned on, Postfold asks iOS whether the clipboard probably contains a web link. iOS answers yes or no without revealing the content. The clipboard is only read when you tap the system Paste button. You can turn this off in Postfold's Settings.
 
-## 6. Deleted posts
+## 7. Deleted posts
 
 If X reports that a post no longer exists or is no longer public, Postfold marks it Unavailable and deletes the cached text and embed. Your link, title, note and folder are kept until you delete them.
 
-## 7. This website
+## 8. This website
 
 This website is a static site hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
 We use [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) to count page views on this website. It does not use cookies or local storage, does not track you across sites, and reports only aggregate statistics such as page views, referrers and country. It is not used in the app. Fonts and images are served from this site; we set no cookies.
 
-## 8. Your choices and rights
+## 9. Your choices and rights
 
 - Delete a post or folder in the app to remove it from your devices and iCloud.
 - Delete the app to remove its local data. To remove the synced copy, manage Postfold's data in your iCloud storage settings on iPhone, iPad or Mac.
 - Turn off iCloud for Postfold to keep the library on one device.
 - Turn off Background App Refresh for Postfold in iOS Settings to stop background re-checks.
+- Turn off the crash and diagnostics option in Postfold's Settings, or *Share With App Developers* in iOS, to stop crash and usage reports (see section 5).
 
-Because we hold no personal data about you, there is nothing for us to access, export, correct or delete on our side. We do not sell or share personal information. If you have a privacy request or concern, email [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com) and we will reply.
+Because we hold no personal data about you, and crash and usage reports reach us without your identity, there is nothing for us to access, export, correct or delete on our side. We do not sell or share personal information. If you have a privacy request or concern, email [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com) and we will reply.
 
-## 9. Children
+## 10. Children
 
-Postfold is not directed at children under 13, and it does not knowingly collect information from anyone, including children.
+Postfold is not directed at children under 13, and it does not knowingly collect personal information from anyone, including children.
 
-## 10. Security
+## 11. Security
 
 All network connections use HTTPS. Data synced through iCloud is protected by Apple's iCloud security.
 
-## 11. Changes to this policy
+## 12. Changes to this policy
 
 If the app's data practices change, for example if a new feature needs a new service, we will update this page and the date at the top before the change ships.
 
-## 12. Contact
+## 13. Contact
 
 Huy Nguyen Email: [huynguyennovem@gmail.com](mailto:huynguyennovem@gmail.com)

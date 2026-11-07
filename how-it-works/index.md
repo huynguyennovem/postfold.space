@@ -14,7 +14,7 @@ Postfold keeps your saved posts organized without an account, a login or a serve
 
 **X's public embed service** Receives a post's link and returns its text and embed. Nothing else.
 
-There is no Postfold server. The developer never receives your data.
+There is no Postfold server. The developer never receives your posts, notes or folders.
 
 ## 1. Saving a post
 
@@ -38,6 +38,10 @@ From time to time, including in the background, Postfold re-checks a small batch
 
 With iCloud on, your library syncs through the private CloudKit database in your own iCloud account. If two devices save the same post while offline, Postfold merges the duplicates when it next opens.
 
+## 6. Crash reports
+
+To find bugs, Postfold relies on tools built into iOS. If you allow it in iOS Settings, Apple shares anonymous crash reports and usage statistics with the developer, and iOS gives the app performance summaries on your device. None of this includes your posts, links, titles or notes, and you can turn it off in Postfold's Settings. The [Privacy Policy](https://postfold.space/privacy/) has the details.
+
 ## What Postfold never does
 
 | Postfold never… | Why it matters |
@@ -46,6 +50,6 @@ With iCloud on, your library syncs through the private CloudKit database in your
 | uses the X API or scrapes x.com | Only X's public, documented embed service is used. |
 | downloads images or videos | Media is shown by X's official embed, from X. |
 | opens posts in an in-app browser | Posts open in the X app or Safari, where you're already signed in. |
-| includes analytics, ads or trackers | Nothing about how you use the app is recorded or sent anywhere. |
+| includes ads, third-party analytics or trackers | Crash and usage reports come only through Apple's built-in tools, without your identity, and you can turn them off. |
 
 Want the technical details? Read about [the technology behind Postfold](https://postfold.space/technology/), or the full [Privacy Policy](https://postfold.space/privacy/).

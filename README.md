@@ -49,8 +49,11 @@ Each `index.md` mirrors its page: update it together with the HTML, and rebuild 
 (it is `llms.txt`'s intro followed by every `index.md` body).
 
 Content was written from the app code and `docs/architecture.md`. Re-check these pages when the app changes:
-- **Privacy Policy**: network hosts (`publish.x.com/oembed`, `platform.twitter.com`), "Data Not Collected",
-  clipboard behavior, background refresh. Must match `PrivacyInfo.xcprivacy` and the App Store privacy label.
+- **Privacy Policy**: network hosts (`publish.x.com/oembed`, `platform.twitter.com`), clipboard behavior,
+  background refresh, and §5 crash reports (Apple only: MetricKit on device, Xcode Organizer, App Store Connect;
+  opt-out in the app's Settings). Must match `PrivacyInfo.xcprivacy`, the App Store privacy label and the
+  Settings label of the opt-out. If a third-party SDK is ever added, update §2, §5, the home FAQ, the privacy band,
+  How it works §6 and `llms.txt`.
 - **Terms §7 Purchases**: written neutrally because pricing (Phase 5) is not decided.
 - **Features / FAQ**: layouts (Preview, Compact, Grid), sort fields, filters, iCloud sync being free.
 - **Screenshots** come from `design/store/app-store/` (HTML re-creations of the UI). Replace them with

@@ -1,6 +1,6 @@
 # Postfold
 
-> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind, no analytics and no tracking, and it syncs through the user's private iCloud. Requires iOS 18 or later.
+> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind, no ads, no third-party analytics and no tracking, and it syncs through the user's private iCloud. Requires iOS 18 or later.
 
 This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
 
@@ -12,7 +12,8 @@ Key facts:
 - List, compact and grid layouts; search across post text, authors, titles and notes
 - No login: never connects to an X account, no Postfold account, no X API, no scraping
 - Post content comes only from X's public oEmbed service; the details screen shows X's official embed with "do not track" on
-- Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and collects no data
+- Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and never receives the user's posts, notes or folders
+- Crash reports and usage statistics come only through Apple's built-in tools (MetricKit, Xcode Organizer, App Store Connect), without the user's identity, with an opt-out in the app's Settings
 - Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
 - Not affiliated with, endorsed by, or sponsored by X Corp.
 - Status: coming soon to the App Store
@@ -32,7 +33,7 @@ Key facts:
 
 ## Legal
 
-- [Privacy Policy](https://postfold.space/privacy/index.md): No data collected; what is stored on device and in iCloud; connections to X's embed service
+- [Privacy Policy](https://postfold.space/privacy/index.md): No personal data collected; what is stored on device and in iCloud; connections to X's embed service; anonymous crash reports via Apple
 - [Terms of Use](https://postfold.space/terms/index.md): Terms for using the Postfold app
 
 ## Optional

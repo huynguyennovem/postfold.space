@@ -90,7 +90,7 @@ Private by design
 
 ## No login. No tracking. No server.
 
-Postfold is built so there is nothing to sign in to and nothing to collect.
+Postfold is built so there is nothing to sign in to, and your content never leaves your devices and your iCloud.
 
 ### Nothing to sign in to
 
@@ -100,9 +100,9 @@ Postfold never asks for your X password and never connects to your X account. Th
 
 Folders, posts and notes stay on your devices and in your private iCloud. The developer cannot see them.
 
-### No analytics or ads
+### No ads, no trackers
 
-The app contains no analytics, advertising or tracking code. Post content comes only from X's public embed service.
+The app has no advertising, third-party analytics or tracking code. Anonymous crash reports come only through Apple's built-in tools, and you can turn them off.
 
 [Read the Privacy Policy](https://postfold.space/privacy/)
 
@@ -132,7 +132,7 @@ Postfold re-checks saved posts from time to time. If a post is no longer availab
 
 ### Does Postfold collect any data?
 
-No. The app has no analytics, no ads and no tracking, and the developer runs no server. Post content comes from X's public embed service, and your library lives on your devices and in your iCloud.
+Not your content. Your posts, notes and folders stay on your devices and in your private iCloud, and the app has no ads, no third-party analytics and no tracking. To fix bugs, we receive anonymous crash reports and usage statistics through Apple's built-in tools. You can turn them off in Postfold's Settings and in iOS Settings.
 
 ### Does it work on iPad?
 

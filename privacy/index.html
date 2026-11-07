@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | Postfold</title>
-  <meta name="description" content="Postfold collects no data: no account, no analytics, no tracking. Learn what the app stores on your device and in your iCloud, and when it contacts X's embed service.">
+  <meta name="description" content="Postfold collects no personal data: no account, no ads, no tracking. Learn what the app stores on your device and in your iCloud, when it contacts X, and how anonymous crash reports work.">
   <link rel="canonical" href="https://postfold.space/privacy/">
   <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/privacy/index.md">
   <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Postfold">
   <meta property="og:title" content="Privacy Policy | Postfold">
-  <meta property="og:description" content="Postfold collects no data: no account, no analytics, no tracking. Learn what the app stores on your device and in your iCloud, and when it contacts X's embed service.">
+  <meta property="og:description" content="Postfold collects no personal data: no account, no ads, no tracking. Learn what the app stores on your device and in your iCloud, when it contacts X, and how anonymous crash reports work.">
   <meta property="og:url" content="https://postfold.space/privacy/">
   <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -55,25 +55,25 @@
       <div class="container">
         <h1>Privacy Policy</h1>
           <p class="meta">Last updated: November 7, 2026</p>
-        <p>Postfold is built to collect nothing. This page explains exactly what the app stores, where it is stored, and which outside services it talks to.</p>
+        <p>Postfold is built to collect as little as possible. This page explains what the app stores, where it is stored, which outside services it talks to, and what crash and usage information reaches us.</p>
       </div>
     </div>
     <div class="container prose">
       <div class="callout">
-        <p><strong>In short:</strong> Postfold has no account and no login. The developer runs no server and collects no personal data. The app contains no analytics, advertising or tracking code. Your library is stored on your devices and synced through your private iCloud. To show a post, the app asks X's public embed service for it.</p>
+        <p><strong>In short:</strong> Postfold has no account and no login. We never see the posts, links, titles, notes or folders you save: they stay on your devices and in your private iCloud. The app has no advertising, no third-party analytics and no tracking. To find and fix problems, we receive anonymous crash reports and usage statistics through Apple's built-in tools, and you can turn them off. To show a post, the app asks X's public embed service for it.</p>
       </div>
 
       <h2>1. Who we are</h2>
       <p>Postfold is an iPhone and iPad app developed by Huy Nguyen ("we", "us"). If you have any question about this policy, email <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a>.</p>
 
       <h2>2. Information we collect</h2>
-      <p>None. We do not operate servers for the app, and Postfold does not send us any information about you or how you use it. Specifically, the app has:</p>
+      <p>We do not collect personal information, and we never receive the content of your library. We do not operate servers for the app. Specifically, the app has:</p>
       <ul>
         <li>no user accounts and no sign-in, with X or with us;</li>
-        <li>no analytics, advertising, crash-reporting or other third-party SDKs;</li>
+        <li>no advertising, and no third-party analytics or crash-reporting SDKs;</li>
         <li>no tracking, as defined by Apple's App Tracking Transparency, and no advertising identifier.</li>
       </ul>
-      <p>This matches the app's App Store privacy label ("Data Not Collected") and its privacy manifest.</p>
+      <p>The only information about how the app runs that reaches us is anonymous crash reports, diagnostics and usage statistics provided by Apple, described in section 5.</p>
 
       <h2>3. What the app stores, and where</h2>
       <p>To work, Postfold keeps your library on your device:</p>
@@ -95,35 +95,46 @@
       </ul>
       <p>Like any web request, these connections let X see your IP address and basic device information. X handles that data under its own <a href="https://x.com/en/privacy" rel="noopener">Privacy Policy</a>, not this one.</p>
 
-      <h2>5. Clipboard</h2>
+      <h2>5. Crash reports and usage statistics</h2>
+      <p>To see when Postfold crashes or runs slowly, and how many people use it, we rely on tools built into iOS and provided by Apple. We do not add any third-party service for this.</p>
+      <ul>
+        <li><strong>Crash reports and diagnostics.</strong> If you turned on <em>Share With App Developers</em> in iOS (Settings › Privacy &amp; Security › Analytics &amp; Improvements), Apple sends us crash logs and reports about hangs, performance, energy and disk use for Postfold, through Xcode and App Store Connect.</li>
+        <li><strong>Usage statistics.</strong> App Store Connect shows us aggregated figures such as installs, sessions, active devices, retention and crash counts, for people who agreed to share analytics with app developers. We see totals, not individuals.</li>
+        <li><strong>On-device diagnostics.</strong> Through Apple's MetricKit framework, iOS also gives Postfold daily summaries of how the app performed on your device, such as launch time, memory use, hangs and crash call stacks. Postfold uses them to spot problems. They stay on your device and Postfold does not upload them.</li>
+      </ul>
+      <p>These reports contain technical information only, such as the device model, iOS version, app version and the call stack of the app's own code. They never include the posts, links, titles, notes or folders you save, and Apple does not tell us who you are. Apple handles this data under its <a href="https://www.apple.com/legal/privacy/" rel="noopener">Privacy Policy</a>.</p>
+      <p><strong>How to turn it off.</strong> Turn off the crash and diagnostics option in Postfold's Settings to stop Postfold from collecting on-device diagnostics. To stop sharing crash and usage data with all app developers, turn off <em>Share With App Developers</em> in iOS Settings › Privacy &amp; Security › Analytics &amp; Improvements.</p>
+
+      <h2>6. Clipboard</h2>
       <p>When you open the app with "Detect Copied Links" turned on, Postfold asks iOS whether the clipboard probably contains a web link. iOS answers yes or no without revealing the content. The clipboard is only read when you tap the system Paste button. You can turn this off in Postfold's Settings.</p>
 
-      <h2>6. Deleted posts</h2>
+      <h2>7. Deleted posts</h2>
       <p>If X reports that a post no longer exists or is no longer public, Postfold marks it Unavailable and deletes the cached text and embed. Your link, title, note and folder are kept until you delete them.</p>
 
-      <h2>7. This website</h2>
+      <h2>8. This website</h2>
       <p>This website is a static site hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.</p>
       <p>We use <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a> to count page views on this website. It does not use cookies or local storage, does not track you across sites, and reports only aggregate statistics such as page views, referrers and country. It is not used in the app. Fonts and images are served from this site; we set no cookies.</p>
 
-      <h2>8. Your choices and rights</h2>
+      <h2>9. Your choices and rights</h2>
       <ul>
         <li>Delete a post or folder in the app to remove it from your devices and iCloud.</li>
         <li>Delete the app to remove its local data. To remove the synced copy, manage Postfold's data in your iCloud storage settings on iPhone, iPad or Mac.</li>
         <li>Turn off iCloud for Postfold to keep the library on one device.</li>
         <li>Turn off Background App Refresh for Postfold in iOS Settings to stop background re-checks.</li>
+        <li>Turn off the crash and diagnostics option in Postfold's Settings, or <em>Share With App Developers</em> in iOS, to stop crash and usage reports (see section 5).</li>
       </ul>
-      <p>Because we hold no personal data about you, there is nothing for us to access, export, correct or delete on our side. We do not sell or share personal information. If you have a privacy request or concern, email <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a> and we will reply.</p>
+      <p>Because we hold no personal data about you, and crash and usage reports reach us without your identity, there is nothing for us to access, export, correct or delete on our side. We do not sell or share personal information. If you have a privacy request or concern, email <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a> and we will reply.</p>
 
-      <h2>9. Children</h2>
-      <p>Postfold is not directed at children under 13, and it does not knowingly collect information from anyone, including children.</p>
+      <h2>10. Children</h2>
+      <p>Postfold is not directed at children under 13, and it does not knowingly collect personal information from anyone, including children.</p>
 
-      <h2>10. Security</h2>
+      <h2>11. Security</h2>
       <p>All network connections use HTTPS. Data synced through iCloud is protected by Apple's iCloud security.</p>
 
-      <h2>11. Changes to this policy</h2>
+      <h2>12. Changes to this policy</h2>
       <p>If the app's data practices change, for example if a new feature needs a new service, we will update this page and the date at the top before the change ships.</p>
 
-      <h2>12. Contact</h2>
+      <h2>13. Contact</h2>
       <p>Huy Nguyen<br>Email: <a href="mailto:huynguyennovem@gmail.com">huynguyennovem@gmail.com</a></p>
     </div>
   </main>

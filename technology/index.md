@@ -18,7 +18,7 @@ Your library is stored with SwiftData and synced through the private CloudKit da
 
 ### No third-party SDKs
 
-Only Apple frameworks. No analytics, ads or crash-reporting libraries, so nothing ships that we didn't write.
+Only Apple frameworks. No ads, analytics or crash-reporting libraries from other companies, so nothing ships that we didn't write.
 
 ## Architecture
 
@@ -35,7 +35,8 @@ Only Apple frameworks. No analytics, ads or crash-reporting libraries, so nothin
 
 ## Privacy, verified
 
-- The app's privacy manifest declares no tracking, no tracking domains and no collected data.
+- The app's privacy manifest declares no tracking and no tracking domains.
+- Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.
 - Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.
 - The only network hosts the app talks to are X's embed services.
 

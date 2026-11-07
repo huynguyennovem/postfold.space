@@ -22,7 +22,7 @@ Tell us what happened and the steps to reproduce it. Include your device, iOS ve
 
 ### Privacy questions
 
-Postfold collects no data. Read how it works, or email us about anything privacy-related.
+Postfold collects no personal data. Read how it works, or email us about anything privacy-related.
 
 [Privacy Policy](https://postfold.space/privacy/)
 
