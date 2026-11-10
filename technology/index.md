@@ -1,12 +1,12 @@
 ---
 title: "Technology | Postfold"
-description: "Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit, with no third-party SDKs. Post content comes only from X's public oEmbed service."
+description: "Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from X's public oEmbed service."
 url: "https://postfold.space/technology/"
 ---
 
 # Technology
 
-Postfold is a native Apple app with no third-party code. Here is what it's built with and why.
+Postfold is a native Apple app. Here is what it's built with and why.
 
 ### SwiftUI & Swift 6
 
@@ -16,9 +16,9 @@ A fully native interface for iPhone and iPad, written in Swift 6 with strict con
 
 Your library is stored with SwiftData and synced through the private CloudKit database in your iCloud.
 
-### No third-party SDKs
+### Apple frameworks first
 
-Only Apple frameworks. No ads, analytics or crash-reporting libraries from other companies, so nothing ships that we didn't write.
+Apple frameworks everywhere except ads, which use the Google Mobile Ads SDK and its consent library. No analytics or crash-reporting libraries from other companies.
 
 ## Architecture
 
@@ -35,10 +35,10 @@ Only Apple frameworks. No ads, analytics or crash-reporting libraries from other
 
 ## Privacy, verified
 
-- The app's privacy manifest declares no tracking and no tracking domains.
+- Ads come from the Google Mobile Ads SDK, behind Google's consent form and the iOS tracking prompt. The app's privacy manifest declares tracking for that reason, and ad requests carry nothing from your library.
 - Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.
 - Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.
-- The only network hosts the app talks to are X's embed services.
+- Apart from Google's ad services, the only network hosts the app talks to are X's embed services.
 
 ## Requirements
 

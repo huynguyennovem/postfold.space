@@ -42,6 +42,10 @@ With iCloud on, your library syncs through the private CloudKit database in your
 
 To find bugs, Postfold relies on tools built into iOS. If you allow it in iOS Settings, Apple shares anonymous crash reports and usage statistics with the developer, and iOS gives the app performance summaries on your device. None of this includes your posts, links, titles or notes, and you can turn it off in Postfold's Settings. The [Privacy Policy](https://postfold.space/privacy/) has the details.
 
+## 7. Ads
+
+Postfold shows ads from Google AdMob: a banner under a post's details, ads between posts in the list, and sometimes a full-screen ad after you add a post. Where the law requires it, the app asks for your consent first, and iOS asks whether Postfold may track you. If you say no, ads still appear, but without your device's advertising identifier. Ad requests never include your posts, links, titles, notes or folders. The [Privacy Policy](https://postfold.space/privacy/) has the details.
+
 ## What Postfold never does
 
 | Postfold never… | Why it matters |
@@ -50,6 +54,7 @@ To find bugs, Postfold relies on tools built into iOS. If you allow it in iOS Se
 | uses the X API or scrapes x.com | Only X's public, documented embed service is used. |
 | downloads images or videos | Media is shown by X's official embed, from X. |
 | opens posts in an in-app browser | Posts open in the X app or Safari, where you're already signed in. |
-| includes ads, third-party analytics or trackers | Crash and usage reports come only through Apple's built-in tools, without your identity, and you can turn them off. |
+| shares your library with advertisers | Ads come from Google AdMob, and ad requests never include your posts, links, titles, notes or folders. |
+| includes third-party analytics or crash reporting | Crash and usage reports come only through Apple's built-in tools, without your identity, and you can turn them off. |
 
 Want the technical details? Read about [the technology behind Postfold](https://postfold.space/technology/), or the full [Privacy Policy](https://postfold.space/privacy/).

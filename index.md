@@ -1,6 +1,6 @@
 ---
 title: "Postfold: Save posts from X into folders"
-description: "Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no tracking, synced with your private iCloud. For iPhone and iPad."
+description: "Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account, synced with your private iCloud. For iPhone and iPad."
 url: "https://postfold.space/"
 ---
 
@@ -8,12 +8,12 @@ For iPhone and iPad
 
 # Your saved posts, finally in folders.
 
-Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no tracking. Your library syncs through your private iCloud.
+Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.
 
 Coming soon to the App Store
 
 - No login
-- No tracking
+- No account
 - iCloud sync
 - iPhone & iPad
 - iOS 18+
@@ -88,7 +88,7 @@ Swipe to see more. Tap a screenshot to enlarge it.
 
 Private by design
 
-## No login. No tracking. No server.
+## No login. No account. No server.
 
 Postfold is built so there is nothing to sign in to, and your content never leaves your devices and your iCloud.
 
@@ -100,9 +100,9 @@ Postfold never asks for your X password and never connects to your X account. Th
 
 Folders, posts and notes stay on your devices and in your private iCloud. The developer cannot see them.
 
-### No ads, no trackers
+### Ads never see your library
 
-The app has no advertising, third-party analytics or tracking code. Anonymous crash reports come only through Apple's built-in tools, and you can turn them off.
+Postfold shows ads from Google AdMob. Advertisers never receive your posts, notes or folders, and you choose whether ads can be personalized. Crash reports come only through Apple's built-in tools, and you can turn them off.
 
 [Read the Privacy Policy](https://postfold.space/privacy/)
 
@@ -132,7 +132,7 @@ Postfold re-checks saved posts from time to time. If a post is no longer availab
 
 ### Does Postfold collect any data?
 
-Not your content. Your posts, notes and folders stay on your devices and in your private iCloud, and the app has no ads, no third-party analytics and no tracking. To fix bugs, we receive anonymous crash reports and usage statistics through Apple's built-in tools. You can turn them off in Postfold's Settings and in iOS Settings.
+Not your content. Your posts, notes and folders stay on your devices and in your private iCloud, and they are never shared with advertisers. Postfold shows ads from Google AdMob, which uses device data such as your IP address, how you interact with ads and, if you allow tracking, your device's advertising identifier. To fix bugs, we receive anonymous crash reports and usage statistics through Apple's built-in tools. You can turn them off in Postfold's Settings and in iOS Settings. The Privacy Policy has the details.
 
 ### Does it work on iPad?
 

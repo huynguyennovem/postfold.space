@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technology | Postfold</title>
-  <meta name="description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit, with no third-party SDKs. Post content comes only from X's public oEmbed service.">
+  <meta name="description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from X's public oEmbed service.">
   <link rel="canonical" href="https://postfold.space/technology/">
   <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/technology/index.md">
   <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Postfold">
   <meta property="og:title" content="Technology | Postfold">
-  <meta property="og:description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit, with no third-party SDKs. Post content comes only from X's public oEmbed service.">
+  <meta property="og:description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from X's public oEmbed service.">
   <meta property="og:url" content="https://postfold.space/technology/">
   <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -54,7 +54,7 @@
     <div class="page-hero">
       <div class="container">
         <h1>Technology</h1>
-        <p>Postfold is a native Apple app with no third-party code. Here is what it's built with and why.</p>
+        <p>Postfold is a native Apple app. Here is what it's built with and why.</p>
       </div>
     </div>
     <div class="container narrow">
@@ -71,8 +71,8 @@
           </article>
           <article class="card">
             <span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-            <h3>No third-party SDKs</h3>
-            <p>Only Apple frameworks. No ads, analytics or crash-reporting libraries from other companies, so nothing ships that we didn't write.</p>
+            <h3>Apple frameworks first</h3>
+            <p>Apple frameworks everywhere except ads, which use the Google Mobile Ads SDK and its consent library. No analytics or crash-reporting libraries from other companies.</p>
           </article>
       </div>
     </div>
@@ -94,10 +94,10 @@
 
       <h2>Privacy, verified</h2>
       <ul>
-        <li>The app's privacy manifest declares no tracking and no tracking domains.</li>
+        <li>Ads come from the Google Mobile Ads SDK, behind Google's consent form and the iOS tracking prompt. The app's privacy manifest declares tracking for that reason, and ad requests carry nothing from your library.</li>
         <li>Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.</li>
         <li>Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.</li>
-        <li>The only network hosts the app talks to are X's embed services.</li>
+        <li>Apart from Google's ad services, the only network hosts the app talks to are X's embed services.</li>
       </ul>
 
       <h2>Requirements</h2>
@@ -117,7 +117,7 @@
             </picture>
             <span>Postfold</span>
           </a>
-          <p>Save posts from X into your own folders. No login, no tracking. For iPhone and iPad.</p>
+          <p>Save posts from X into your own folders. No login, no account. For iPhone and iPad.</p>
         </div>
         <div>
           <h4>Product</h4>

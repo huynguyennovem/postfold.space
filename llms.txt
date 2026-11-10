@@ -1,6 +1,6 @@
 # Postfold
 
-> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind, no ads, no third-party analytics and no tracking, and it syncs through the user's private iCloud. Requires iOS 18 or later.
+> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind and no third-party analytics, shows ads from Google AdMob, and syncs through the user's private iCloud. Requires iOS 18 or later.
 
 This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
 
@@ -13,8 +13,10 @@ Key facts:
 - No login: never connects to an X account, no Postfold account, no X API, no scraping
 - Post content comes only from X's public oEmbed service; the details screen shows X's official embed with "do not track" on
 - Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and never receives the user's posts, notes or folders
+- Ads come from Google AdMob (banner on post details, ads between posts in the list, occasional full-screen ad after adding a post), behind Google's consent form and the iOS tracking prompt; ad requests never include the user's posts, notes or folders
 - Crash reports and usage statistics come only through Apple's built-in tools (MetricKit, Xcode Organizer, App Store Connect), without the user's identity, with an opt-out in the app's Settings
 - Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
+- An Android version keeps the library on the device (Android backup, no sync) and uses Google Firebase for crash reports and usage statistics; see the Privacy Policy
 - Not affiliated with, endorsed by, or sponsored by X Corp.
 - Status: coming soon to the App Store
 
@@ -24,7 +26,7 @@ Key facts:
 
 - [Home](https://postfold.space/index.md): Overview, features, screenshots and FAQ
 - [How it works](https://postfold.space/how-it-works/index.md): What happens when you save, view and open a post, and where data goes
-- [Technology](https://postfold.space/technology/index.md): SwiftUI, Swift 6, SwiftData, CloudKit, no third-party SDKs
+- [Technology](https://postfold.space/technology/index.md): SwiftUI, Swift 6, SwiftData, CloudKit; Google Mobile Ads is the only third-party SDK
 
 ## Support
 
@@ -33,7 +35,7 @@ Key facts:
 
 ## Legal
 
-- [Privacy Policy](https://postfold.space/privacy/index.md): No personal data collected; what is stored on device and in iCloud; connections to X's embed service; anonymous crash reports via Apple
+- [Privacy Policy](https://postfold.space/privacy/index.md): What is stored on device and in iCloud; connections to X's embed service; Google AdMob ads, consent and tracking choices; anonymous crash reports via Apple on iPhone and iPad; Google Firebase crash and usage reports on Android
 - [Terms of Use](https://postfold.space/terms/index.md): Terms for using the Postfold app
 
 ## Optional

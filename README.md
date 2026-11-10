@@ -6,12 +6,12 @@ Published from the GitHub repo `huynguyennovem/postfold.github.io` with GitHub P
 ```
 index.html             home: hero, features, how it works, screenshots, privacy, FAQ, download
 how-it-works/          where data goes when you save, view and open a post
-technology/            SwiftUI, SwiftData, CloudKit, oEmbed
+technology/            SwiftUI, SwiftData, CloudKit, oEmbed, Google Mobile Ads
 support/               getting started, troubleshooting, contact
 privacy/  terms/       Privacy Policy, Terms of Use
 404.html               GitHub Pages "not found" page (uses absolute /assets paths)
 */index.md, index.md   Markdown copy of each page for AI assistants
-favicon.ico, llms.txt, llms-full.txt, robots.txt, sitemap.xml, CNAME, .nojekyll
+favicon.ico, llms.txt, llms-full.txt, robots.txt, sitemap.xml, app-ads.txt, CNAME, .nojekyll
 assets/css/style.css   all styles; light and dark mode follow the system setting
 assets/js/main.js      CONFIG block, mobile menu, screenshot tabs + lightbox, analytics loader
 assets/images/         icons, og-image.jpg (1200×630), App Store badge, screenshots/
@@ -50,10 +50,18 @@ Each `index.md` mirrors its page: update it together with the HTML, and rebuild 
 
 Content was written from the app code and `docs/architecture.md`. Re-check these pages when the app changes:
 - **Privacy Policy**: network hosts (`publish.x.com/oembed`, `platform.twitter.com`), clipboard behavior,
-  background refresh, and §5 crash reports (Apple only: MetricKit on device, Xcode Organizer, App Store Connect;
-  opt-out in the app's Settings). Must match `PrivacyInfo.xcprivacy`, the App Store privacy label and the
-  Settings label of the opt-out. If a third-party SDK is ever added, update §2, §5, the home FAQ, the privacy band,
-  How it works §6 and `llms.txt`.
+  background refresh, and §5 crash reports on iPhone and iPad (Apple only: MetricKit on device, Xcode Organizer,
+  App Store Connect; opt-out in the app's Settings). Must match `PrivacyInfo.xcprivacy`, the App Store privacy label
+  and the Settings label of the opt-out.
+- **Privacy Policy §8 (Advertising, all platforms)**: Google AdMob placements, consent form (UMP), the iOS tracking
+  prompt (ATT) and the Android advertising ID. Must match `docs/adr/0004-ads-admob.md`, `docs/adr/0006-android-ads.md`,
+  the App Store privacy label and the Google Play Data safety form. The same facts appear in the home privacy band
+  and FAQ (also in the FAQ JSON-LD in `index.html`), How it works §7, Technology and `llms.txt`.
+- **Privacy Policy §9 (Android)**: Firebase Crashlytics + Analytics, Android backup. Must match
+  `docs/adr/0005-android-firebase.md`, the Data safety form and the Settings label (Collect Diagnostics).
+  The home page, How it works and Technology describe the iPhone and iPad app only.
+- **`app-ads.txt`**: lists the AdMob publisher ID. It must match the publisher ID in the AdMob account
+  (`ADMOB_APP_ID` in `ios/Config/Shared.xcconfig`, without the `ca-app-` prefix and the `~app` suffix).
 - **Terms §7 Purchases**: written neutrally because pricing (Phase 5) is not decided.
 - **Features / FAQ**: layouts (Preview, Compact, Grid), sort fields, filters, iCloud sync being free.
 - **Screenshots** come from `design/store/app-store/` (HTML re-creations of the UI). Replace them with
