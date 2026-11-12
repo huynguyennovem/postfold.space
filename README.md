@@ -14,7 +14,7 @@ privacy/  terms/       Privacy Policy, Terms of Use
 favicon.ico, llms.txt, llms-full.txt, robots.txt, sitemap.xml, app-ads.txt, CNAME, .nojekyll
 assets/css/style.css   all styles; light and dark mode follow the system setting
 assets/js/main.js      CONFIG block, mobile menu, screenshot tabs + lightbox, analytics loader
-assets/images/         icons, og-image.jpg (1200×630), App Store badge, screenshots/
+assets/images/         icons, og-image.jpg (1200×630), App Store and Google Play badges, screenshots/
 assets/fonts/          Inter (self-hosted, latin + latin-ext)
 ```
 
@@ -37,6 +37,9 @@ Edit the `CONFIG` block at the top of `assets/js/main.js`:
 |---|---|---|
 | `appStoreUrl` | e.g. `https://apps.apple.com/app/id1234567890` | Turns on both App Store badges and hides "Coming soon to the App Store" |
 | `cloudflareAnalyticsToken` | token from Cloudflare › Web Analytics › Add a site › `postfold.space` (JS snippet) | Loads the Cloudflare beacon. Empty = no analytics script at all |
+
+The Google Play badge links straight to the live listing (`com.app.postfold`) in `index.html` and `index.md`.
+`assets/images/GooglePlay_Badge.png` is Google's official English "Get it on Google Play" badge, cropped to the badge edge.
 
 Also update when the App Store listing is live:
 - `llms.txt`: the "Status: coming soon" line, and add the App Store link.

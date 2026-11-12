@@ -1,6 +1,6 @@
 # Postfold
 
-> Postfold is an iPhone and iPad app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind and no third-party analytics, shows ads from Google AdMob, and syncs through the user's private iCloud. Requires iOS 18 or later.
+> Postfold is an iPhone, iPad and Android app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind and shows ads from Google AdMob. On iPhone and iPad it has no third-party analytics and syncs through the user's private iCloud. Requires iOS 18 or later, or Android 8.0 or later.
 
 This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
 
@@ -18,7 +18,7 @@ Key facts:
 - Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
 - An Android version keeps the library on the device (Android backup, no sync) and uses Google Firebase for crash reports and usage statistics; see the Privacy Policy
 - Not affiliated with, endorsed by, or sponsored by X Corp.
-- Status: coming soon to the App Store
+- Status: available on [Google Play](https://play.google.com/store/apps/details?id=com.app.postfold); coming soon to the App Store
 
 ---
 

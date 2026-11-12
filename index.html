@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Postfold: Save posts from X into folders</title>
-  <meta name="description" content="Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account, synced with your private iCloud. For iPhone and iPad.">
+  <meta name="description" content="Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account. For iPhone, iPad and Android, with private iCloud sync on iPhone and iPad.">
   <link rel="canonical" href="https://postfold.space/">
   <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/index.md">
   <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Postfold">
   <meta property="og:title" content="Postfold: Save posts from X into folders">
-  <meta property="og:description" content="Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account, synced with your private iCloud. For iPhone and iPad.">
+  <meta property="og:description" content="Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account. For iPhone, iPad and Android, with private iCloud sync on iPhone and iPad.">
   <meta property="og:url" content="https://postfold.space/">
   <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -25,7 +25,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Postfold","description":"Save posts from X into folders with your own titles and notes. No login, no account, synced with iCloud.","operatingSystem":"iOS 18.0 or later","applicationCategory":"ProductivityApplication","url":"https://postfold.space/","image":"https://postfold.space/assets/images/app-icon-512.png","author":{"@type":"Person","name":"Huy Nguyen","email":"huynguyennovem@gmail.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Postfold","description":"Save posts from X into folders with your own titles and notes. No login, no account, synced with iCloud.","operatingSystem":"iOS 18.0 or later, Android 8.0 or later","applicationCategory":"ProductivityApplication","url":"https://postfold.space/","image":"https://postfold.space/assets/images/app-icon-512.png","author":{"@type":"Person","name":"Huy Nguyen","email":"huynguyennovem@gmail.com"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to sign in to X or create an account?","acceptedAnswer":{"@type":"Answer","text":"No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link."}},{"@type":"Question","name":"Can Postfold import the bookmarks I already have on X?","acceptedAnswer":{"@type":"Answer","text":"No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link."}},{"@type":"Question","name":"How do I save a post?","acceptedAnswer":{"@type":"Answer","text":"In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen."}},{"@type":"Question","name":"Are my folders synced between my iPhone and iPad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device."}},{"@type":"Question","name":"What happens when a post is deleted on X?","acceptedAnswer":{"@type":"Answer","text":"Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept."}},{"@type":"Question","name":"Does Postfold collect any data?","acceptedAnswer":{"@type":"Answer","text":"Not your content. Your posts, notes and folders stay on your devices and in your private iCloud, and they are never shared with advertisers. Postfold shows ads from Google AdMob, which uses device data such as your IP address, how you interact with ads and, if you allow tracking, your device's advertising identifier. To fix bugs, we receive anonymous crash reports and usage statistics through Apple's built-in tools. You can turn them off in Postfold's Settings and in iOS Settings. The Privacy Policy has the details."}},{"@type":"Question","name":"Does it work on iPad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see folders, posts and the post itself side by side."}},{"@type":"Question","name":"How much does Postfold cost?","acceptedAnswer":{"@type":"Answer","text":"Any price or in-app purchase is shown on the App Store listing before you download or buy."}},{"@type":"Question","name":"Is Postfold made by X?","acceptedAnswer":{"@type":"Answer","text":"No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp."}}]}</script>
 </head>
 <body>
@@ -61,10 +61,13 @@
             <source srcset="assets/images/app-icon-light.webp" type="image/webp">
             <img class="hero-icon" src="assets/images/app-icon-light.png" alt="Postfold app icon: a white letter P shaped like a bookmark" width="84" height="84" fetchpriority="high">
           </picture>
-          <p class="eyebrow">For iPhone and iPad</p>
+          <p class="eyebrow">For iPhone, iPad and Android</p>
           <h1>Your saved posts, <span class="accent">finally in folders.</span></h1>
           <p class="lead">Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.</p>
           <div class="store-row">
+            <a class="store-badge store-badge-play" href="https://play.google.com/store/apps/details?id=com.app.postfold" target="_blank" rel="noopener">
+              <img src="assets/images/GooglePlay_Badge.png" alt="Get Postfold on Google Play" width="202" height="60">
+            </a>
             <a class="store-badge" data-store="ios" aria-disabled="true" tabindex="-1">
               <picture>
                 <source srcset="assets/images/App_Store_Badge.webp" type="image/webp">
@@ -79,6 +82,7 @@
             <li>iCloud sync</li>
             <li>iPhone &amp; iPad</li>
             <li>iOS 18+</li>
+            <li>Android</li>
           </ul>
         </div>
         <div class="hero-visual">
@@ -314,8 +318,11 @@
             <img class="cta-icon" src="assets/images/app-icon-light.png" alt="" width="96" height="96" loading="lazy">
           </picture>
           <h2>Give your saved posts a home</h2>
-          <p>Postfold for iPhone and iPad. Requires iOS 18 or later.</p>
+          <p>Postfold for iPhone and iPad (iOS 18 or later) and Android (8.0 or later).</p>
           <div class="store-row">
+            <a class="store-badge store-badge-play" href="https://play.google.com/store/apps/details?id=com.app.postfold" target="_blank" rel="noopener">
+              <img src="assets/images/GooglePlay_Badge.png" alt="Get Postfold on Google Play" width="202" height="60">
+            </a>
             <a class="store-badge" data-store="ios" aria-disabled="true" tabindex="-1">
               <picture>
                 <source srcset="assets/images/App_Store_Badge.webp" type="image/webp">
@@ -347,7 +354,7 @@
             </picture>
             <span>Postfold</span>
           </a>
-          <p>Save posts from X into your own folders. No login, no account. For iPhone and iPad.</p>
+          <p>Save posts from X into your own folders. No login, no account. For iPhone, iPad and Android.</p>
         </div>
         <div>
           <h4>Product</h4>
@@ -376,6 +383,7 @@
       <div class="footer-legal">
         <p>Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. X is a trademark of X Corp.</p>
         <p>Apple, iPhone, iPad, iCloud and App Store are trademarks of Apple Inc.</p>
+        <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
         <p>&copy; <span data-year>2026</span> Huy Nguyen. All rights reserved.</p>
       </div>
     </div>

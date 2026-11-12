@@ -1,14 +1,16 @@
 ---
 title: "Postfold: Save posts from X into folders"
-description: "Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account, synced with your private iCloud. For iPhone and iPad."
+description: "Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account. For iPhone, iPad and Android, with private iCloud sync on iPhone and iPad."
 url: "https://postfold.space/"
 ---
 
-For iPhone and iPad
+For iPhone, iPad and Android
 
 # Your saved posts, finally in folders.
 
 Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.
+
+[Get it on Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
 Coming soon to the App Store
 
@@ -17,6 +19,7 @@ Coming soon to the App Store
 - iCloud sync
 - iPhone & iPad
 - iOS 18+
+- Android
 
 Bookmark folders on X are a Premium feature. **Postfold gives every saved post a home**, without signing in to anything.
 
@@ -148,6 +151,8 @@ No. Postfold is an independent app and is not affiliated with, endorsed by, or s
 
 ## Give your saved posts a home
 
-Postfold for iPhone and iPad. Requires iOS 18 or later.
+Postfold for iPhone and iPad (iOS 18 or later) and Android (8.0 or later).
+
+[Get it on Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
 Coming soon to the App Store
