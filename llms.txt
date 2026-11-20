@@ -27,6 +27,7 @@ Key facts:
 - [Home](https://postfold.space/index.md): Overview, features, screenshots and FAQ
 - [How it works](https://postfold.space/how-it-works/index.md): What happens when you save, view and open a post, and where data goes
 - [Technology](https://postfold.space/technology/index.md): SwiftUI, Swift 6, SwiftData, CloudKit; Google Mobile Ads is the only third-party SDK
+- [Changelog](https://postfold.space/changelog/index.md): What changed in each release, newest first
 
 ## Support
 

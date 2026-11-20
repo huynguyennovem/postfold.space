@@ -8,6 +8,7 @@ index.html             home: hero, features, how it works, screenshots, privacy,
 how-it-works/          where data goes when you save, view and open a post
 technology/            SwiftUI, SwiftData, CloudKit, oEmbed, Google Mobile Ads
 support/               getting started, troubleshooting, contact
+changelog/             release notes, newest first (update with each app release)
 privacy/  terms/       Privacy Policy, Terms of Use
 404.html               GitHub Pages "not found" page (uses absolute /assets paths)
 */index.md, index.md   Markdown copy of each page for AI assistants
