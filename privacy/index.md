@@ -1,16 +1,16 @@
 ---
 title: "Privacy Policy | Postfold"
-description: "What Postfold stores on your device, when it contacts X, and what crash, usage and advertising data the iPhone, iPad and Android apps share with Apple and Google."
+description: "What Postfold stores on your device, when it contacts social platforms, and what crash, usage and advertising data the iPhone, iPad and Android apps share with Apple and Google."
 url: "https://postfold.space/privacy/"
 ---
 
 # Privacy Policy
 
-Last updated: November 10, 2026
+Last updated: November 21, 2026
 
 This page explains what Postfold stores, where it is stored, which outside services it talks to, and what crash, usage and advertising information is collected. The iPhone and iPad app and the Android app differ, so each section says which app it describes. Section 8 covers advertising, and section 9 covers what only the Android app does.
 
-**In short:** Postfold has no account and no login. We never see the posts, links, titles, notes or folders you save: they stay on your devices and, on iPhone and iPad, in your private iCloud. To show a post, the app asks X's public embed service for it. The app shows ads through Google AdMob, which can use your device's advertising identifier; on iPhone and iPad, only if you allow tracking. Advertisers never receive anything from your library. On iPhone and iPad, there is no third-party analytics: anonymous crash reports and usage statistics reach us through Apple's built-in tools, and you can turn them off. On Android, crash reports and usage statistics go to Google Firebase, and you can turn them off too.
+**In short:** Postfold has no account and no login. We never see the posts, links, titles, notes or folders you save: they stay on your devices and, on iPhone and iPad, in your private iCloud. To show a post, the app asks the public embed service of the platform it comes from, such as X, Threads, Instagram, Facebook, YouTube, TikTok or Reddit. The app shows ads through Google AdMob, which can use your device's advertising identifier; on iPhone and iPad, only if you allow tracking. Advertisers never receive anything from your library. On iPhone and iPad, there is no third-party analytics: anonymous crash reports and usage statistics reach us through Apple's built-in tools, and you can turn them off. On Android, crash reports and usage statistics go to Google Firebase, and you can turn them off too.
 
 ## 1. Who we are
 
@@ -18,7 +18,7 @@ Postfold is an app for iPhone, iPad and Android developed by Huy Nguyen ("we", "
 
 ## 2. Information we collect
 
-On every platform, we never receive the content of your library, we do not operate servers for the app, and the app has no user accounts and no sign-in, with X or with us.
+On every platform, we never receive the content of your library, we do not operate servers for the app, and the app has no user accounts and no sign-in, with any social platform or with us.
 
 **On iPhone and iPad** the app includes one outside service, Google AdMob, which shows ads and collects advertising data, described in section 8. The app has no third-party analytics or crash-reporting SDKs. Apart from advertising, the only information about how the app runs that reaches us is anonymous crash reports, diagnostics and usage statistics provided by Apple, described in section 5.
 
@@ -29,25 +29,37 @@ On every platform, we never receive the content of your library, we do not opera
 To work, Postfold keeps your library on your device:
 
 - the links of the posts you save, and the author name and handle;
-- a cached copy of each post's text and embed markup, as returned by X's embed service;
+- a cached copy of each post's text and embed markup, as returned by the platform's embed service, and a thumbnail link when the platform provides one;
 - your folders, custom titles and notes, and the dates you added or changed them;
 - your app settings (for example the default layout and folder).
 
-**iCloud sync (iPhone and iPad).** If iCloud is turned on for your Apple Account, this library is synced through the private CloudKit database in *your* iCloud account, so it appears on your other devices. It is stored and protected by Apple under [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). We have no access to your iCloud data. If iCloud is off, the library stays on that device only.
+**iCloud sync (iPhone and iPad).** If iCloud is turned on for your Apple Account, this library is synced through the private CloudKit database in *your* iCloud account, so it appears on your other devices. It is stored and protected by Apple under [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). We have no access to your iCloud data. If iCloud is off, the library stays on that device only. You can also turn off iCloud Sync in Postfold's Settings.
+
+**Backup files (import and export).** When you export, Postfold writes a file with your links, titles, notes and folders to the place you choose, such as Files or Google Drive. When you import, it reads the file you pick on your device. These files never pass through us.
+
+**Rating prompts.** After you save, import or export, Postfold may ask iOS or Google Play to show the rating prompt. Apple or Google show it and handle your rating; Postfold never learns whether or how you rated.
 
 **Share extension (iPhone and iPad).** When you save from the Share sheet, the link, folder and note are handed to the main app through a shared container on your device. Nothing leaves the device at this step.
 
 **Android.** The library stays on your device and does not sync between devices. Section 9 explains Android backup.
 
-## 4. Connections to X
+## 4. Connections to social platforms
 
-Postfold never signs in to X, does not use the X API and does not scrape x.com. It contacts X only in these cases:
+Postfold never signs in to any social platform, does not use their APIs that need an account or token, and does not scrape their websites. It contacts the platform a post comes from only in these cases:
 
-- **Saving and re-checking a post.** The app sends the post's link to X's public oEmbed service at `publish.x.com/oembed`, with the "do not track" option turned on, and caches the result. It does this when you save a post and, from time to time, to check that saved posts still exist (including in the background, when the system allows it).
-- **Viewing a post.** The post details screen shows X's official embedded post. It loads X's embed script from `platform.twitter.com`, again with "do not track" on, and the post's images, videos and profile pictures come from X's servers.
-- **Opening a post.** Tapping Open in X hands the link to iOS or Android, which opens it in the X app or in your browser. Postfold has no in-app browser.
+- **Saving and re-checking a post.** The app sends the post's link to that platform's public oEmbed service and caches the result. It does this when you save a post and, from time to time, to check that saved posts still exist (including in the background, when the system allows it). The services are:
+  - X: `publish.x.com/oembed`, with the "do not track" option turned on;
+  - Threads: `graph.threads.com`;
+  - Instagram and Facebook: `graph.facebook.com` (Meta's oEmbed service);
+  - YouTube: `youtube.com/oembed`;
+  - TikTok: `tiktok.com/oembed`;
+  - Reddit: `reddit.com/oembed`.
+- **Viewing a post.** The post details screen shows the platform's official embedded post. It loads that platform's embed script or player (for example from `platform.twitter.com`, `threads.com`, `instagram.com`, `connect.facebook.net`, `youtube.com`, `tiktok.com` or `embed.reddit.com`), and the post's images, videos and profile pictures come from the platform's servers. On X, "do not track" is turned on. A thumbnail shown in the list also comes from the platform's servers.
+- **Opening a post.** Tapping Open hands the link to iOS or Android, which opens it in the platform's app or in your browser. Postfold has no in-app browser.
 
-Like any web request, these connections let X see your IP address and basic device information. X handles that data under its own [Privacy Policy](https://x.com/en/privacy), not this one.
+LinkedIn posts and other links are saved as plain links: Postfold does not contact those sites until you open the link yourself.
+
+Like any web request, these connections let the platform see your IP address and basic device information. Each platform handles that data under its own privacy policy, not this one: [X](https://x.com/en/privacy), [Meta (Threads, Instagram, Facebook)](https://www.facebook.com/privacy/policy/), [Google (YouTube)](https://policies.google.com/privacy), [TikTok](https://www.tiktok.com/legal/privacy-policy) and [Reddit](https://www.reddit.com/policies/privacy-policy).
 
 ## 5. Crash reports and usage statistics on iPhone and iPad
 
@@ -67,7 +79,7 @@ When you open the app with "Detect Copied Links" turned on, Postfold asks iOS or
 
 ## 7. Deleted posts
 
-If X reports that a post no longer exists or is no longer public, Postfold marks it Unavailable and deletes the cached text and embed. Your link, title, note and folder are kept until you delete them.
+If the platform reports that a post no longer exists or is no longer public, Postfold marks it Unavailable and deletes the cached text and embed. Your link, title, note and folder are kept until you delete them.
 
 ## 8. Advertising
 
@@ -112,7 +124,7 @@ On iPhone and iPad:
 
 - Delete a post or folder in the app to remove it from your devices and iCloud.
 - Delete the app to remove its local data. To remove the synced copy, manage Postfold's data in your iCloud storage settings on iPhone, iPad or Mac.
-- Turn off iCloud for Postfold to keep the library on one device.
+- Turn off iCloud Sync in Postfold's Settings, or iCloud for Postfold, to keep the library on one device.
 - Turn off Background App Refresh for Postfold in iOS Settings to stop background re-checks.
 - Turn off the crash and diagnostics option in Postfold's Settings, or *Share With App Developers* in iOS, to stop crash and usage reports (see section 5).
 - Turn off tracking for Postfold in iOS Settings › Privacy & Security › Tracking, or change your ad choices under Privacy Options in Postfold's Settings where it is shown (see section 8).
