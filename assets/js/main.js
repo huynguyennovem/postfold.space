@@ -1,25 +1,10 @@
-// Values to fill in before launch. Empty values keep the "Coming soon" state / skip analytics.
+// Empty values skip analytics.
 const CONFIG = {
-  appStoreUrl: '',
   cloudflareAnalyticsToken: '',
 };
 
 (() => {
   'use strict';
-
-  const enableStoreLinks = () => {
-    document.querySelectorAll('[data-store="ios"]').forEach((a) => {
-      if (!CONFIG.appStoreUrl) return;
-      a.href = CONFIG.appStoreUrl;
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.removeAttribute('aria-disabled');
-      a.removeAttribute('tabindex');
-    });
-    document.querySelectorAll('[data-store-note]').forEach((el) => {
-      el.hidden = Boolean(CONFIG.appStoreUrl);
-    });
-  };
 
   const loadAnalytics = () => {
     if (!CONFIG.cloudflareAnalyticsToken) return;
@@ -98,7 +83,6 @@ const CONFIG = {
     el.textContent = new Date().getFullYear();
   });
 
-  enableStoreLinks();
   setupMenu();
   setupTabs();
   setupLightbox();

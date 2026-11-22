@@ -18,7 +18,7 @@ Key facts:
 - Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
 - An Android version keeps the library on the device (Android backup, no sync) and uses Google Firebase for crash reports and usage statistics; see the Privacy Policy
 - Not affiliated with, endorsed by, or sponsored by X Corp.
-- Status: available on [Google Play](https://play.google.com/store/apps/details?id=com.app.postfold); coming soon to the App Store
+- Status: available on the [App Store](https://apps.apple.com/app/id6830735922) and [Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
 ---
 

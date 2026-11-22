@@ -30,21 +30,18 @@ python3 -m http.server 8000 -d landingpage
 
 Open http://127.0.0.1:8000/.
 
-## Fill in before launch
+## Store links
 
-Edit the `CONFIG` block at the top of `assets/js/main.js`:
+Both badges link straight to the live listings, in `index.html`, `index.md`, `llms.txt` and `llms-full.txt`:
+- App Store: `https://apps.apple.com/app/id6830735922` (`APP_STORE_ID` in `ios/Config/Shared.xcconfig`)
+- Google Play: `https://play.google.com/store/apps/details?id=com.app.postfold`
 
-| Key | Value | Effect |
-|---|---|---|
-| `appStoreUrl` | e.g. `https://apps.apple.com/app/id1234567890` | Turns on both App Store badges and hides "Coming soon to the App Store" |
-| `cloudflareAnalyticsToken` | token from Cloudflare › Web Analytics › Add a site › `postfold.space` (JS snippet) | Loads the Cloudflare beacon. Empty = no analytics script at all |
-
-The Google Play badge links straight to the live listing (`com.app.postfold`) in `index.html` and `index.md`.
 `assets/images/GooglePlay_Badge.png` is Google's official English "Get it on Google Play" badge, cropped to the badge edge.
 
-Also update when the App Store listing is live:
-- `llms.txt`: the "Status: coming soon" line, and add the App Store link.
-- FAQ "How much does Postfold cost?" in `index.html` (and `index.md`) if you want to name a price.
+## Analytics
+
+Set `cloudflareAnalyticsToken` in the `CONFIG` block at the top of `assets/js/main.js` to the token from
+Cloudflare › Web Analytics › Add a site › `postfold.space` (JS snippet). Empty = no analytics script at all.
 
 ## Keep in sync
 

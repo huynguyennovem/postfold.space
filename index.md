@@ -12,7 +12,7 @@ Postfold saves posts from X into folders you create, with your own titles and no
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
-Coming soon to the App Store
+[Download on the App Store](https://apps.apple.com/app/id6830735922)
 
 - No login
 - No account
@@ -155,4 +155,4 @@ Postfold for iPhone and iPad (iOS 18 or later) and Android (8.0 or later).
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
-Coming soon to the App Store
+[Download on the App Store](https://apps.apple.com/app/id6830735922)

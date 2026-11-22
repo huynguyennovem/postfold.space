@@ -370,27 +370,8 @@ p {
   width: auto;
 }
 
-.store-badge:not([aria-disabled="true"]):hover {
+.store-badge:hover {
   transform: translateY(-2px);
-}
-
-.store-badge[aria-disabled="true"] {
-  opacity: 0.55;
-  cursor: default;
-  pointer-events: none;
-}
-
-.store-note {
-  font-size: 0.9rem;
-  color: var(--text-3);
-}
-
-.store-note[hidden] {
-  display: none;
-}
-
-.on-dark .store-note {
-  color: rgba(255, 255, 255, 0.82);
 }
 
 /* ---------- Sections ---------- */
