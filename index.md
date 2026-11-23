@@ -1,5 +1,5 @@
 ---
-title: "Postfold: Save posts from X into folders"
+title: "Postfold: Organize your posts neatly"
 description: "Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account. For iPhone, iPad and Android, with private iCloud sync on iPhone and iPad."
 url: "https://postfold.space/"
 ---
