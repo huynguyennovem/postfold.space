@@ -40,8 +40,16 @@ Both badges link straight to the live listings, in `index.html`, `index.md`, `ll
 
 ## Analytics
 
-Set `cloudflareAnalyticsToken` in the `CONFIG` block at the top of `assets/js/main.js` to the token from
-Cloudflare › Web Analytics › Add a site › `postfold.space` (JS snippet). Empty = no analytics script at all.
+Google Analytics 4: `googleAnalyticsId` in the `CONFIG` block at the top of `assets/js/main.js` holds the
+Measurement ID (`G-…`, from Google Analytics › Admin › Data streams › Web). Empty = no analytics script at all.
+
+- Runs with Consent Mode v2: everything is denied by default and a banner asks for analytics cookies.
+- The choice is kept in `localStorage` (`postfold-analytics-consent`); the Privacy Policy §10 has a
+  "Change cookie choice" button (`data-consent-settings`). Google Signals and ad personalization are off.
+- Custom event `store_click` (`store`: `app_store` | `google_play`, `placement`: `hero` | `download`).
+  In GA, register `store` and `placement` as event-scoped custom dimensions and mark `store_click` as a key event.
+
+Privacy Policy §10 describes it. Update it (and `privacy/index.md`, `llms-full.txt`) if analytics changes.
 
 ## Keep in sync
 

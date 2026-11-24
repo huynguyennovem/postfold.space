@@ -1,18 +1,116 @@
 // Empty values skip analytics.
 const CONFIG = {
-  cloudflareAnalyticsToken: '',
+  googleAnalyticsId: 'G-84XF9WYH9T',
 };
 
 (() => {
   'use strict';
 
-  const loadAnalytics = () => {
-    if (!CONFIG.cloudflareAnalyticsToken) return;
+  const CONSENT_KEY = 'postfold-analytics-consent';
+  const privacyUrl = new URL('../../privacy/#website', document.currentScript.src).href;
+
+  const readConsent = () => {
+    try {
+      return localStorage.getItem(CONSENT_KEY);
+    } catch {
+      return null;
+    }
+  };
+
+  const saveConsent = (choice) => {
+    try {
+      localStorage.setItem(CONSENT_KEY, choice);
+    } catch {
+      // Private mode or blocked storage: the banner shows again next visit.
+    }
+  };
+
+  const clearAnalyticsCookies = () => {
+    const labels = location.hostname.split('.');
+    document.cookie
+      .split(';')
+      .map((cookie) => cookie.split('=')[0].trim())
+      .filter((name) => name.startsWith('_ga'))
+      .forEach((name) => {
+        document.cookie = `${name}=; Max-Age=0; path=/`;
+        labels.forEach((_, i) => {
+          document.cookie = `${name}=; Max-Age=0; path=/; domain=${labels.slice(i).join('.')}`;
+        });
+      });
+  };
+
+  const applyConsent = (choice) => {
+    saveConsent(choice);
+    window.gtag('consent', 'update', { analytics_storage: choice });
+    if (choice === 'denied') clearAnalyticsCookies();
+  };
+
+  const showConsentBanner = () => {
+    document.querySelector('.consent')?.remove();
+    const banner = document.createElement('div');
+    banner.className = 'consent';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-label', 'Cookie consent');
+    banner.innerHTML = `
+      <p>May we use Google Analytics cookies to see how visitors use this site? <a href="${privacyUrl}">Privacy Policy</a></p>
+      <div class="consent-actions">
+        <button type="button" class="btn btn-secondary btn-sm" data-consent="denied">Decline</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-consent="granted">Accept</button>
+      </div>`;
+    banner.querySelectorAll('[data-consent]').forEach((button) => {
+      button.addEventListener('click', () => {
+        applyConsent(button.dataset.consent);
+        banner.remove();
+      });
+    });
+    document.body.appendChild(banner);
+  };
+
+  const setupConsentSettings = () => {
+    document.querySelectorAll('[data-consent-settings]').forEach((block) => {
+      block.hidden = false;
+      block.querySelector('button').addEventListener('click', showConsentBanner);
+    });
+  };
+
+  const trackStoreClicks = () => {
+    document.querySelectorAll('.store-badge').forEach((link) => {
+      link.addEventListener('click', () => {
+        const section = link.closest('section');
+        window.gtag('event', 'store_click', {
+          store: link.hostname === 'play.google.com' ? 'google_play' : 'app_store',
+          placement: section ? section.id || section.className : 'page',
+        });
+      });
+    });
+  };
+
+  const loadGoogleAnalytics = () => {
+    const id = CONFIG.googleAnalyticsId;
+    if (!id) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag() {
+      window.dataLayer.push(arguments);
+    };
+    window.gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: readConsent() === 'granted' ? 'granted' : 'denied',
+    });
+    window.gtag('js', new Date());
+    window.gtag('config', id, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+    });
     const script = document.createElement('script');
-    script.defer = true;
-    script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
-    script.dataset.cfBeacon = JSON.stringify({ token: CONFIG.cloudflareAnalyticsToken });
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
     document.head.appendChild(script);
+
+    if (!readConsent()) showConsentBanner();
+    setupConsentSettings();
+    trackStoreClicks();
   };
 
   const setupMenu = () => {
@@ -86,5 +184,5 @@ const CONFIG = {
   setupMenu();
   setupTabs();
   setupLightbox();
-  loadAnalytics();
+  loadGoogleAnalytics();
 })();

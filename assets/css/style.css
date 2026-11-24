@@ -775,6 +775,37 @@ section {
   cursor: pointer;
 }
 
+/* ---------- Cookie consent ---------- */
+.consent {
+  position: fixed;
+  inset-inline: 16px;
+  bottom: 16px;
+  z-index: 2500;
+  max-width: 600px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 16px 20px;
+  background: var(--card);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.9rem;
+}
+
+.consent p {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+.consent-actions {
+  display: flex;
+  gap: 10px;
+}
+
 /* ---------- Privacy band ---------- */
 .band {
   background: linear-gradient(135deg, var(--dark-from), var(--dark-to));

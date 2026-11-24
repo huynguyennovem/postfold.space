@@ -436,7 +436,7 @@ Looking for general questions? See the [FAQ on the home page](https://postfold.s
 
 # Privacy Policy
 
-Last updated: November 21, 2026
+Last updated: November 24, 2026
 
 This page explains what Postfold stores, where it is stored, which outside services it talks to, and what crash, usage and advertising information is collected. The iPhone and iPad app and the Android app differ, so each section says which app it describes. Section 8 covers advertising, and section 9 covers what only the Android app does.
 
@@ -546,7 +546,11 @@ These reports never include the posts, links, author names, titles, notes or fol
 
 This website is a static site hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-We use [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) to count page views on this website. It does not use cookies or local storage, does not track you across sites, and reports only aggregate statistics such as page views, referrers and country. It is not used in the app. Fonts and images are served from this site; we set no cookies.
+We use Google Analytics, provided by Google, to understand how visitors find and use this website. On your first visit, a banner asks whether you accept analytics cookies. If you accept, Google Analytics sets first-party cookies (`_ga` and `_ga_…`) that last up to two years, and records the pages you view, how far you scroll, clicks on links to other sites (including the App Store and Google Play buttons), the site that referred you, your browser, device type, language and approximate location derived from your IP address. If you decline, or until you choose, no analytics cookies are set; your browser still sends Google basic signals without cookies or identifiers, such as your consent choice and the page viewed, which Google uses to estimate overall traffic. Google Signals and advertising features are turned off, so this data is not used for ads. Google processes it as described in [Google's Privacy Policy](https://policies.google.com/privacy).
+
+Your choice is saved in your browser's local storage. Declining later also removes the Google Analytics cookies from this site. To change your choice, use the Change cookie choice button in this section at https://postfold.space/privacy/.
+
+Analytics on this website is separate from the app and not linked to it. Fonts and images are served from this site; apart from the Google Analytics cookies you can accept, we set no cookies.
 
 ## 11. Your choices and rights
 
