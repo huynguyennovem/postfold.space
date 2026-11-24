@@ -8,6 +8,48 @@ url: "https://postfold.space/changelog/"
 
 Every release, newest first. Version numbers match Settings › About in the app.
 
+## Version 1.7
+
+November 24, 2026 · iPhone, iPad and Android
+
+### Work with many posts at once
+
+- Tap **Select**, pick posts or **Select All**, then:
+  - **Delete** them from Postfold, out of every folder.
+  - **Move to Folder** to file them somewhere else.
+  - **Add to Folder** to put them in more folders and keep the ones they're in.
+  - **Remove from Folder**, inside a folder, to take them out of that folder only.
+- Postfold asks before deleting or removing and shows how many posts are affected. You can create a new folder right from the folder picker.
+
+### Revisit reminders
+
+- Turn on **Revisit Reminders** in Settings to get a gentle nudge about saved posts you haven't opened in a while: after 3 days up to 6 months, at the time you choose.
+- The new **To Revisit** list shows those posts. Turn reminders off for any folder you don't need them for.
+
+### Improvements
+
+- Previews for YouTube, Reddit and Facebook posts work again.
+- A post whose preview can't load says so, instead of loading forever.
+
+## Version 1.6
+
+November 21, 2026 · iPhone, iPad and Android
+
+### Import and export
+
+- Back up your whole library, one folder, or the posts you select, as a **Postfold Backup (JSON)** or **HTML Bookmarks** file.
+- **Import** a Postfold backup, bookmarks from your browser, a CSV file or a plain list of links. Posts you already have aren't saved twice.
+
+### Sync
+
+- iPhone and iPad: **Settings › iCloud Sync** shows your iCloud account status and when your library last synced, and lets you turn sync on or off.
+- Android: Settings explains how your library is kept in your device's Google backup.
+
+### Improvements
+
+- **Rate Postfold** from Settings.
+- Bug fixes and improvements.
+
 ## Version 1.5
 
 November 20, 2026 · iPhone, iPad and Android
