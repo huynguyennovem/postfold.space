@@ -1,6 +1,6 @@
 ---
 title: "How it works | Postfold"
-description: "How Postfold saves posts from X without a login: what happens when you save, view and open a post, and where your data goes."
+description: "How Postfold saves posts without a login: what happens when you save, view and open a post, and where your data goes."
 url: "https://postfold.space/how-it-works/"
 ---
 
@@ -12,23 +12,23 @@ Postfold keeps your saved posts organized without an account, a login or a serve
 
 **Your private iCloud** Syncs your library between your devices. Only you can read it.
 
-**X's public embed service** Receives a post's link and returns its text and embed. Nothing else.
+**The platform's public embed service** Receives a post's link and returns its text and embed. Nothing else.
 
 There is no Postfold server. The developer never receives your posts, notes or folders.
 
 ## 1. Saving a post
 
-Tap Share on a post in the X app and choose Postfold, or copy the post's link and open Postfold. The Share sheet only shows your folders and a note field; the link, folder and note are passed to the main app on your device.
+Tap Share on a post in the app you're using and choose Postfold, or copy the post's link and open Postfold. The Share sheet only shows your folders and a note field; the link, folder and note are passed to the main app on your device.
 
-When the app opens, it adds the post and asks X's public oEmbed service (`publish.x.com/oembed`) for it, sending just the post's link with "do not track" on. It caches the author, text and embed so your library loads instantly and works offline.
+When the app opens, it adds the post and asks the public oEmbed service of the platform it comes from (for example `publish.x.com/oembed` or `youtube.com/oembed`), sending just the post's link, with "do not track" on for X. It caches what the service returns, such as the author, text and embed, so your library loads instantly and works offline. LinkedIn posts and other links are saved as Link Only: the link, your title, note and folders, with no preview and no request.
 
 ## 2. Organizing
 
-Folders, custom titles, notes, sorting and filtering all happen on your device. Each folder remembers its own sort order and filters. The date a post was published is worked out from the post's ID, so no extra request is needed.
+Folders, custom titles, notes, sorting and filtering all happen on your device. Each folder remembers its own sort order and filters. On platforms whose post IDs include a timestamp, the date a post was published is worked out from its ID, so no extra request is needed.
 
 ## 3. Viewing a post
 
-The details screen shows X's official embedded post, exactly as X publishes it, with "do not track" on. Links inside the embed open in the X app or Safari, never in a browser inside Postfold.
+The details screen shows the platform's official embedded post, exactly as the platform publishes it, with "do not track" on for X. Links inside the embed open in the platform's app or Safari, never in a browser inside Postfold.
 
 ## 4. Keeping posts up to date
 
@@ -50,10 +50,10 @@ Postfold shows ads from Google AdMob: a banner under a post's details, ads betwe
 
 | Postfold never… | Why it matters |
 |---|---|
-| asks you to log in to X or to Postfold | No password to leak, no account to manage. |
-| uses the X API or scrapes x.com | Only X's public, documented embed service is used. |
-| downloads images or videos | Media is shown by X's official embed, from X. |
-| opens posts in an in-app browser | Posts open in the X app or Safari, where you're already signed in. |
+| asks you to log in to a social network or to Postfold | No password to leak, no account to manage. |
+| uses APIs that need an account, or scrapes websites | Only each platform's public, documented embed service is used. |
+| downloads images or videos | Media is shown by the platform's official embed, from the platform's servers. |
+| opens posts in an in-app browser | Posts open in the platform's app or Safari, where you're already signed in. |
 | shares your library with advertisers | Ads come from Google AdMob, and ad requests never include your posts, links, titles, notes or folders. |
 | includes third-party analytics or crash reporting | Crash and usage reports come only through Apple's built-in tools, without your identity, and you can turn them off. |
 

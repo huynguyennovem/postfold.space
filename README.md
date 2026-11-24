@@ -66,7 +66,7 @@ Each `index.md` mirrors its page: update it together with the HTML, and rebuild 
 (it is `llms.txt`'s intro followed by every `index.md` body).
 
 Content was written from the app code and `docs/architecture.md`. Re-check these pages when the app changes:
-- **Privacy Policy**: network hosts (`publish.x.com/oembed`, `platform.twitter.com`), clipboard behavior,
+- **Privacy Policy**: §4 network hosts for each platform (oEmbed services and embed scripts), clipboard behavior,
   background refresh, and §5 crash reports on iPhone and iPad (Apple only: MetricKit on device, Xcode Organizer,
   App Store Connect; opt-out in the app's Settings). Must match `PrivacyInfo.xcprivacy`, the App Store privacy label
   and the Settings label of the opt-out.
@@ -100,6 +100,10 @@ Content was written from the app code and `docs/architecture.md`. Re-check these
 
 ## Rules for the copy
 
-- English only. The app name never contains "X", "Twitter" or "Tweet". No X logo or bird.
-- "Posts from X" in body text is fine (describes the content). Keep the footer disclaimer:
-  not affiliated with, endorsed by, or sponsored by X Corp.
+- English only. The app name never contains "X", "Twitter" or "Tweet". No platform logos.
+- Marketing copy is platform-neutral ("posts from the apps you use"). Name platforms (X, Threads, Instagram,
+  Facebook, YouTube, TikTok, Reddit, LinkedIn) in plain text only to describe compatibility, a platform-specific
+  fact (a link format, a button label, a network host) or whose terms apply.
+- Never mention a platform's paid tiers, pricing or business, and never compare Postfold with a platform's features.
+- Keep the footer disclaimer: not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance,
+  Reddit or LinkedIn; all trademarks belong to their owners.

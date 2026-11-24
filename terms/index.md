@@ -16,15 +16,15 @@ By downloading or using Postfold, you agree to these Terms of Use and to our [Pr
 
 ## 2. What Postfold does
 
-Postfold lets you save links to public posts from X, organize them in folders, and add your own titles and notes. Post content is shown through X's public oEmbed service and official embed. Postfold does not sign in to X, does not use the X API and does not download images or videos.
+Postfold lets you save links to public posts from social platforms such as X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn, and to other web pages, organize them in folders, and add your own titles and notes. Where a platform offers a public oEmbed service, post content is shown through that service and the platform's official embed; other links are saved without a preview. Postfold does not sign in to any platform, does not use APIs that need an account or token, and does not download images or videos.
 
-## 3. Not affiliated with X
+## 3. Not affiliated with any platform
 
-Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. "X" is a trademark of X Corp. and is used only to describe the content Postfold works with.
+Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn. X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn are trademarks of their respective owners and are used only to describe the content Postfold works with.
 
-## 4. Content from X
+## 4. Content from social platforms
 
-Posts belong to their authors and are provided by X. We do not control, review or endorse them. Your use of X's content and services, including the X app and website, is subject to [X's Terms of Service](https://x.com/en/tos). Postfold relies on X's public services; if X changes or stops them, some features may stop working, and posts deleted or made private on X become Unavailable in the app.
+Posts belong to their authors and are provided by the platform they were published on. We do not control, review or endorse them. Your use of a platform's content and services, including its app and website, is subject to that platform's terms, such as those of [X](https://x.com/en/tos), [Facebook](https://www.facebook.com/terms.php), [Instagram](https://help.instagram.com/581066165581870), [YouTube](https://www.youtube.com/t/terms), [TikTok](https://www.tiktok.com/legal/terms-of-service), [Reddit](https://www.redditinc.com/policies/user-agreement) and [LinkedIn](https://www.linkedin.com/legal/user-agreement). Postfold relies on these platforms' public services; if a platform changes or stops them, some features may stop working, and posts deleted or made private there become Unavailable in the app.
 
 ## 5. Your content and your data
 
@@ -32,7 +32,7 @@ Your folders, titles and notes are yours. They are stored on your devices and, i
 
 ## 6. Acceptable use
 
-Use Postfold only for lawful, personal purposes. Do not use it to break X's terms, to infringe others' rights, or to attempt to reverse engineer, overload or misuse the app or the services it connects to, except where the law allows.
+Use Postfold only for lawful, personal purposes. Do not use it to break the terms of the platforms you save posts from, to infringe others' rights, or to attempt to reverse engineer, overload or misuse the app or the services it connects to, except where the law allows.
 
 ## 7. Purchases
 
@@ -44,7 +44,7 @@ The Postfold name, icon, app design and this website are owned by Huy Nguyen. Th
 
 ## 9. No warranty
 
-Postfold is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. We do not guarantee that the app will be error-free, that it will always be able to load posts, or that it will stay compatible with X's services.
+Postfold is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. We do not guarantee that the app will be error-free, that it will always be able to load posts, or that it will stay compatible with the platforms' services.
 
 ## 10. Limitation of liability
 

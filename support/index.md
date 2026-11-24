@@ -29,7 +29,7 @@ Postfold never receives your posts, notes or folders. Read how it works, or emai
 ## Getting started
 
 1. Open Postfold once and create a few folders (or keep everything in Unsorted).
-2. In the X app, tap Share on a post, then Share via…, and choose Postfold.
+2. In the app you're using, tap Share on a post and choose Postfold. In some apps, such as X, the Share sheet is under Share via….
 3. Pick a folder, add a note if you like, and tap Save.
 4. Open Postfold to see your saved post, sort, filter and search.
 
@@ -39,7 +39,7 @@ Prefer copying links? Copy a post link anywhere, open Postfold, and tap Paste on
 
 ### Postfold doesn't appear in the Share sheet
 
-Open Postfold once after installing it. Then, in the X app, tap Share, then Share via…, scroll the row of apps to the end, tap More, and turn on Postfold. You can drag it to the top of the list.
+Open Postfold once after installing it. Then tap Share in the app you're using (in X, Share, then Share via…), scroll the row of apps to the end, tap More, and turn on Postfold. You can drag it to the top of the list.
 
 ### The Share sheet says my folders will appear later
 
@@ -49,13 +49,13 @@ The Share sheet reads your folder list from the main app. Open Postfold once and
 
 Posts saved from the Share sheet are added the next time you open Postfold. If it still doesn't appear, check that you have an internet connection so the app can load the post.
 
-### Postfold says the link isn't a post
+### Postfold says "Not a link"
 
-Postfold saves links to single posts, such as x.com/name/status/1234567890. Links to profiles, lists or searches can't be saved.
+Postfold saves any web link that starts with http:// or https://. Posts from X, Threads, Instagram, Facebook, YouTube, TikTok and Reddit get a preview. LinkedIn posts and other links, such as profiles or articles, are saved as Link Only, without a preview. If you see "Not a link", check that you copied the whole address.
 
 ### A post shows as Unavailable
 
-The post was deleted, or its account is now private or suspended, so X no longer returns it. Your link, title, note and folder are kept. If you think it's a mistake, open the post and tap Reload Post.
+The post was deleted, or its account is now private or suspended, so the platform no longer shows it. Your link, title, note and folder are kept. If you think it's a mistake, open the post and tap Reload Post.
 
 ### My library isn't syncing between devices
 
@@ -63,7 +63,7 @@ Make sure every device is signed in to the same Apple Account and that iCloud is
 
 ### The post details screen is blank
 
-The embedded post loads from X, so it needs an internet connection. Tap Reload Post to try again. You can always tap Open in X to read the post in the X app or Safari.
+The embedded post loads from the platform's servers, so it needs an internet connection. Tap Reload Post to try again. You can always tap Open (for example Open in X or Open in YouTube) to read the post in the platform's app or Safari.
 
 ## Still stuck?
 

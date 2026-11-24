@@ -1,23 +1,23 @@
 # Postfold
 
-> Postfold is an iPhone, iPad and Android app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind and shows ads from Google AdMob. On iPhone and iPad it has no third-party analytics and syncs through the user's private iCloud. Requires iOS 18 or later, or Android 8.0 or later.
+> Postfold is an iPhone, iPad and Android app that saves posts and links from the apps people use into folders they create, with your own titles and notes. It has no login of any kind and shows ads from Google AdMob. On iPhone and iPad it has no third-party analytics and syncs through the user's private iCloud. Requires iOS 18 or later, or Android 8.0 or later.
 
 This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
 
 Key facts:
-- Saves posts from X into user-created folders (bookmark folders are a Premium-only feature on X)
-- Save in two taps from the iOS Share sheet, or by copying a post link
+- Saves posts from X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn into user-created folders; any other link can be saved as Link Only (no preview)
+- Save in two taps from the Share sheet of the app the user is in, or by copying a post link
 - Custom titles, private notes, emoji and color for folders
-- Sort by date added, date modified, title, date posted or author; filter by date range, author, note or status
+- Sort by date added, date modified, title, date posted or author; filter by platform, date range, author, note or status
 - List, compact and grid layouts; search across post text, authors, titles and notes
-- No login: never connects to an X account, no Postfold account, no X API, no scraping
-- Post content comes only from X's public oEmbed service; the details screen shows X's official embed with "do not track" on
+- No login: never connects to any social media account, no Postfold account, no APIs that need an account or token, no scraping
+- Post content comes only from each platform's public oEmbed service; the details screen shows the platform's official embed (on X with "do not track" on); LinkedIn posts and other links are saved without a preview
 - Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and never receives the user's posts, notes or folders
 - Ads come from Google AdMob (banner on post details, ads between posts in the list, occasional full-screen ad after adding a post), behind Google's consent form and the iOS tracking prompt; ad requests never include the user's posts, notes or folders
 - Crash reports and usage statistics come only through Apple's built-in tools (MetricKit, Xcode Organizer, App Store Connect), without the user's identity, with an opt-out in the app's Settings
-- Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
+- Deleted or private posts are marked Unavailable; the user's link, title, note and folder are kept
 - An Android version keeps the library on the device (Android backup, no sync) and uses Google Firebase for crash reports and usage statistics; see the Privacy Policy
-- Not affiliated with, endorsed by, or sponsored by X Corp.
+- Not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn
 - Status: available on the [App Store](https://apps.apple.com/app/id6830735922) and [Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
 ---
@@ -28,7 +28,7 @@ For iPhone, iPad and Android
 
 # Your saved posts, finally in folders.
 
-Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.
+Postfold saves posts from the apps you use into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
@@ -41,7 +41,7 @@ Postfold saves posts from X into folders you create, with your own titles and no
 - iOS 18+
 - Android
 
-Bookmark folders on X are a Premium feature. **Postfold gives every saved post a home**, without signing in to anything.
+One long list of saves gets messy fast. **Postfold gives every saved post a home**, without signing in to anything.
 
 Features
 
@@ -49,9 +49,11 @@ Features
 
 Folders, titles, notes, sorting and search for the posts you want to come back to.
 
+Works with posts from X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn, and with any other link.
+
 ### Save in two taps
 
-Share a post from the X app, pick a folder, done. Add a note right in the Share sheet.
+Share a post from any app, pick a folder, done. Add a note right in the Share sheet.
 
 ### A folder for every idea
 
@@ -63,7 +65,7 @@ Give posts your own title and a private note, so you remember why you saved them
 
 ### Sort and filter your way
 
-Sort by date added, date modified, title, date posted or author. Filter by date range, author, note or status.
+Sort by date added, date modified, title, date posted or author. Filter by platform, date range, author, note or status.
 
 ### List, compact or grid
 
@@ -79,7 +81,7 @@ Your library follows you across iPhone and iPad through your private iCloud. No 
 
 ### Handles deleted posts
 
-If a post disappears from X, Postfold marks it Unavailable and keeps your link, title and note.
+If a post is deleted or made private, Postfold marks it Unavailable and keeps your link, title and note.
 
 ### Copied a link? Save it
 
@@ -91,7 +93,7 @@ How it works
 
 ### Tap Share on a post
 
-In the X app, tap Share on any post and choose Postfold. Or just copy the post's link.
+In the app you're using, tap Share on any post and choose Postfold. Or just copy the post's link.
 
 ### Pick a folder
 
@@ -99,7 +101,7 @@ Choose a folder (or create one), add a note if you like, and tap Save.
 
 ### Find it later
 
-Open Postfold to sort, filter and search your saves. Tap Open in X to read the post in the X app.
+Open Postfold to sort, filter and search your saves. Tap Open to read a post in the app it came from.
 
 [Where your data goes](https://postfold.space/how-it-works/)
 
@@ -117,7 +119,7 @@ Postfold is built so there is nothing to sign in to, and your content never leav
 
 ### Nothing to sign in to
 
-Postfold never asks for your X password and never connects to your X account. There is no Postfold account either.
+Postfold never asks for a password and never connects to your social media accounts. There is no Postfold account either.
 
 ### Your iCloud, not our server
 
@@ -133,25 +135,25 @@ FAQ
 
 ## Questions, answered
 
-### Do I need to sign in to X or create an account?
+### Do I need to sign in or create an account?
 
-No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link.
+No. Postfold has no login of any kind: it never connects to your social media accounts and there is no Postfold account. You save a post by sharing it from the app you're using or by pasting its link.
 
-### Can Postfold import the bookmarks I already have on X?
+### Can Postfold import the bookmarks I saved in other apps?
 
-No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link.
+No. Because Postfold never signs in to any app or website, it cannot read the bookmarks or saves you made there. You add posts one at a time, from the Share sheet or by pasting a link.
 
 ### How do I save a post?
 
-In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen.
+In the app you're using, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen.
 
 ### Are my folders synced between my iPhone and iPad?
 
 Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device.
 
-### What happens when a post is deleted on X?
+### What happens when a post is deleted?
 
-Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept.
+Postfold re-checks saved posts from time to time. If a post is deleted, made private or removed, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept.
 
 ### Does Postfold collect any data?
 
@@ -165,9 +167,9 @@ Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see fold
 
 Any price or in-app purchase is shown on the App Store listing before you download or buy.
 
-### Is Postfold made by X?
+### Is Postfold affiliated with any social network?
 
-No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp.
+No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn. All trademarks belong to their respective owners.
 
 ## Give your saved posts a home
 
@@ -189,23 +191,23 @@ Postfold keeps your saved posts organized without an account, a login or a serve
 
 **Your private iCloud** Syncs your library between your devices. Only you can read it.
 
-**X's public embed service** Receives a post's link and returns its text and embed. Nothing else.
+**The platform's public embed service** Receives a post's link and returns its text and embed. Nothing else.
 
 There is no Postfold server. The developer never receives your posts, notes or folders.
 
 ## 1. Saving a post
 
-Tap Share on a post in the X app and choose Postfold, or copy the post's link and open Postfold. The Share sheet only shows your folders and a note field; the link, folder and note are passed to the main app on your device.
+Tap Share on a post in the app you're using and choose Postfold, or copy the post's link and open Postfold. The Share sheet only shows your folders and a note field; the link, folder and note are passed to the main app on your device.
 
-When the app opens, it adds the post and asks X's public oEmbed service (`publish.x.com/oembed`) for it, sending just the post's link with "do not track" on. It caches the author, text and embed so your library loads instantly and works offline.
+When the app opens, it adds the post and asks the public oEmbed service of the platform it comes from (for example `publish.x.com/oembed` or `youtube.com/oembed`), sending just the post's link, with "do not track" on for X. It caches what the service returns, such as the author, text and embed, so your library loads instantly and works offline. LinkedIn posts and other links are saved as Link Only: the link, your title, note and folders, with no preview and no request.
 
 ## 2. Organizing
 
-Folders, custom titles, notes, sorting and filtering all happen on your device. Each folder remembers its own sort order and filters. The date a post was published is worked out from the post's ID, so no extra request is needed.
+Folders, custom titles, notes, sorting and filtering all happen on your device. Each folder remembers its own sort order and filters. On platforms whose post IDs include a timestamp, the date a post was published is worked out from its ID, so no extra request is needed.
 
 ## 3. Viewing a post
 
-The details screen shows X's official embedded post, exactly as X publishes it, with "do not track" on. Links inside the embed open in the X app or Safari, never in a browser inside Postfold.
+The details screen shows the platform's official embedded post, exactly as the platform publishes it, with "do not track" on for X. Links inside the embed open in the platform's app or Safari, never in a browser inside Postfold.
 
 ## 4. Keeping posts up to date
 
@@ -227,10 +229,10 @@ Postfold shows ads from Google AdMob: a banner under a post's details, ads betwe
 
 | Postfold never… | Why it matters |
 |---|---|
-| asks you to log in to X or to Postfold | No password to leak, no account to manage. |
-| uses the X API or scrapes x.com | Only X's public, documented embed service is used. |
-| downloads images or videos | Media is shown by X's official embed, from X. |
-| opens posts in an in-app browser | Posts open in the X app or Safari, where you're already signed in. |
+| asks you to log in to a social network or to Postfold | No password to leak, no account to manage. |
+| uses APIs that need an account, or scrapes websites | Only each platform's public, documented embed service is used. |
+| downloads images or videos | Media is shown by the platform's official embed, from the platform's servers. |
+| opens posts in an in-app browser | Posts open in the platform's app or Safari, where you're already signed in. |
 | shares your library with advertisers | Ads come from Google AdMob, and ad requests never include your posts, links, titles, notes or folders. |
 | includes third-party analytics or crash reporting | Crash and usage reports come only through Apple's built-in tools, without your identity, and you can turn them off. |
 
@@ -262,11 +264,11 @@ Apple frameworks everywhere except ads, which use the Google Mobile Ads SDK and 
 - **Shared Swift package.** Link parsing, oEmbed parsing, models and the sort/filter query live in one local package used by both the app and the extension.
 - **CloudKit-friendly model.** Every field has a default and relationships are optional, as CloudKit requires. Duplicates created by offline saves on two devices are merged on launch.
 
-## Content from X, done by the book
+## Content from social platforms, done by the book
 
-- **oEmbed only.** Post text and embed markup come from X's public oEmbed endpoint, requested with `dnt=true` and `omit_script=true`. Responses are parsed without loading HTML into a web view.
-- **Official embed.** The details screen renders the oEmbed HTML with X's `widgets.js` in a `WKWebView`. Every link tap is handed to iOS, which opens the X app or Safari.
-- **Post dates from IDs.** X post IDs encode their creation time, so Postfold can sort by date posted without any extra request.
+- **oEmbed only.** Post text and embed markup come from each platform's public oEmbed endpoint (on X, requested with `dnt=true` and `omit_script=true`). Responses are parsed without loading HTML into a web view. LinkedIn posts and other links are saved as plain links, with no request.
+- **Official embed.** The details screen renders the oEmbed HTML with the platform's own embed script (on X, `widgets.js`) in a `WKWebView`. Every link tap is handed to iOS, which opens the platform's app or Safari.
+- **Post dates from IDs.** Post IDs on X, Threads, Instagram, TikTok and LinkedIn encode their creation time, so Postfold can sort by date posted without any extra request.
 - **Polite re-checks.** A background refresh task re-checks a small batch of the oldest saves, one request at a time.
 
 ## Privacy, verified
@@ -274,7 +276,7 @@ Apple frameworks everywhere except ads, which use the Google Mobile Ads SDK and 
 - Ads come from the Google Mobile Ads SDK, behind Google's consent form and the iOS tracking prompt. The app's privacy manifest declares tracking for that reason, and ad requests carry nothing from your library.
 - Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.
 - Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.
-- Apart from Google's ad services, the only network hosts the app talks to are X's embed services.
+- Apart from Google's ad services, the only network hosts the app talks to are the embed and image servers of the platforms your saved posts come from.
 
 ## Requirements
 
@@ -388,7 +390,7 @@ Postfold never receives your posts, notes or folders. Read how it works, or emai
 ## Getting started
 
 1. Open Postfold once and create a few folders (or keep everything in Unsorted).
-2. In the X app, tap Share on a post, then Share via…, and choose Postfold.
+2. In the app you're using, tap Share on a post and choose Postfold. In some apps, such as X, the Share sheet is under Share via….
 3. Pick a folder, add a note if you like, and tap Save.
 4. Open Postfold to see your saved post, sort, filter and search.
 
@@ -398,7 +400,7 @@ Prefer copying links? Copy a post link anywhere, open Postfold, and tap Paste on
 
 ### Postfold doesn't appear in the Share sheet
 
-Open Postfold once after installing it. Then, in the X app, tap Share, then Share via…, scroll the row of apps to the end, tap More, and turn on Postfold. You can drag it to the top of the list.
+Open Postfold once after installing it. Then tap Share in the app you're using (in X, Share, then Share via…), scroll the row of apps to the end, tap More, and turn on Postfold. You can drag it to the top of the list.
 
 ### The Share sheet says my folders will appear later
 
@@ -408,13 +410,13 @@ The Share sheet reads your folder list from the main app. Open Postfold once and
 
 Posts saved from the Share sheet are added the next time you open Postfold. If it still doesn't appear, check that you have an internet connection so the app can load the post.
 
-### Postfold says the link isn't a post
+### Postfold says "Not a link"
 
-Postfold saves links to single posts, such as x.com/name/status/1234567890. Links to profiles, lists or searches can't be saved.
+Postfold saves any web link that starts with http:// or https://. Posts from X, Threads, Instagram, Facebook, YouTube, TikTok and Reddit get a preview. LinkedIn posts and other links, such as profiles or articles, are saved as Link Only, without a preview. If you see "Not a link", check that you copied the whole address.
 
 ### A post shows as Unavailable
 
-The post was deleted, or its account is now private or suspended, so X no longer returns it. Your link, title, note and folder are kept. If you think it's a mistake, open the post and tap Reload Post.
+The post was deleted, or its account is now private or suspended, so the platform no longer shows it. Your link, title, note and folder are kept. If you think it's a mistake, open the post and tap Reload Post.
 
 ### My library isn't syncing between devices
 
@@ -422,7 +424,7 @@ Make sure every device is signed in to the same Apple Account and that iCloud is
 
 ### The post details screen is blank
 
-The embedded post loads from X, so it needs an internet connection. Tap Reload Post to try again. You can always tap Open in X to read the post in the X app or Safari.
+The embedded post loads from the platform's servers, so it needs an internet connection. Tap Reload Post to try again. You can always tap Open (for example Open in X or Open in YouTube) to read the post in the platform's app or Safari.
 
 ## Still stuck?
 
@@ -607,15 +609,15 @@ By downloading or using Postfold, you agree to these Terms of Use and to our [Pr
 
 ## 2. What Postfold does
 
-Postfold lets you save links to public posts from X, organize them in folders, and add your own titles and notes. Post content is shown through X's public oEmbed service and official embed. Postfold does not sign in to X, does not use the X API and does not download images or videos.
+Postfold lets you save links to public posts from social platforms such as X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn, and to other web pages, organize them in folders, and add your own titles and notes. Where a platform offers a public oEmbed service, post content is shown through that service and the platform's official embed; other links are saved without a preview. Postfold does not sign in to any platform, does not use APIs that need an account or token, and does not download images or videos.
 
-## 3. Not affiliated with X
+## 3. Not affiliated with any platform
 
-Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. "X" is a trademark of X Corp. and is used only to describe the content Postfold works with.
+Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn. X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn are trademarks of their respective owners and are used only to describe the content Postfold works with.
 
-## 4. Content from X
+## 4. Content from social platforms
 
-Posts belong to their authors and are provided by X. We do not control, review or endorse them. Your use of X's content and services, including the X app and website, is subject to [X's Terms of Service](https://x.com/en/tos). Postfold relies on X's public services; if X changes or stops them, some features may stop working, and posts deleted or made private on X become Unavailable in the app.
+Posts belong to their authors and are provided by the platform they were published on. We do not control, review or endorse them. Your use of a platform's content and services, including its app and website, is subject to that platform's terms, such as those of [X](https://x.com/en/tos), [Facebook](https://www.facebook.com/terms.php), [Instagram](https://help.instagram.com/581066165581870), [YouTube](https://www.youtube.com/t/terms), [TikTok](https://www.tiktok.com/legal/terms-of-service), [Reddit](https://www.redditinc.com/policies/user-agreement) and [LinkedIn](https://www.linkedin.com/legal/user-agreement). Postfold relies on these platforms' public services; if a platform changes or stops them, some features may stop working, and posts deleted or made private there become Unavailable in the app.
 
 ## 5. Your content and your data
 
@@ -623,7 +625,7 @@ Your folders, titles and notes are yours. They are stored on your devices and, i
 
 ## 6. Acceptable use
 
-Use Postfold only for lawful, personal purposes. Do not use it to break X's terms, to infringe others' rights, or to attempt to reverse engineer, overload or misuse the app or the services it connects to, except where the law allows.
+Use Postfold only for lawful, personal purposes. Do not use it to break the terms of the platforms you save posts from, to infringe others' rights, or to attempt to reverse engineer, overload or misuse the app or the services it connects to, except where the law allows.
 
 ## 7. Purchases
 
@@ -635,7 +637,7 @@ The Postfold name, icon, app design and this website are owned by Huy Nguyen. Th
 
 ## 9. No warranty
 
-Postfold is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. We do not guarantee that the app will be error-free, that it will always be able to load posts, or that it will stay compatible with X's services.
+Postfold is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. We do not guarantee that the app will be error-free, that it will always be able to load posts, or that it will stay compatible with the platforms' services.
 
 ## 10. Limitation of liability
 

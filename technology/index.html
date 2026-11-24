@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technology | Postfold</title>
-  <meta name="description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from X's public oEmbed service.">
+  <meta name="description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from each platform's public oEmbed service.">
   <link rel="canonical" href="https://postfold.space/technology/">
   <link rel="alternate" type="text/markdown" title="Markdown version" href="https://postfold.space/technology/index.md">
   <link rel="alternate" type="text/plain" title="LLM context" href="https://postfold.space/llms.txt">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Postfold">
   <meta property="og:title" content="Technology | Postfold">
-  <meta property="og:description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from X's public oEmbed service.">
+  <meta property="og:description" content="Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from each platform's public oEmbed service.">
   <meta property="og:url" content="https://postfold.space/technology/">
   <meta property="og:image" content="https://postfold.space/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -84,11 +84,11 @@
         <li><strong>CloudKit-friendly model.</strong> Every field has a default and relationships are optional, as CloudKit requires. Duplicates created by offline saves on two devices are merged on launch.</li>
       </ul>
 
-      <h2>Content from X, done by the book</h2>
+      <h2>Content from social platforms, done by the book</h2>
       <ul>
-        <li><strong>oEmbed only.</strong> Post text and embed markup come from X's public oEmbed endpoint, requested with <code>dnt=true</code> and <code>omit_script=true</code>. Responses are parsed without loading HTML into a web view.</li>
-        <li><strong>Official embed.</strong> The details screen renders the oEmbed HTML with X's <code>widgets.js</code> in a <code>WKWebView</code>. Every link tap is handed to iOS, which opens the X app or Safari.</li>
-        <li><strong>Post dates from IDs.</strong> X post IDs encode their creation time, so Postfold can sort by date posted without any extra request.</li>
+        <li><strong>oEmbed only.</strong> Post text and embed markup come from each platform's public oEmbed endpoint (on X, requested with <code>dnt=true</code> and <code>omit_script=true</code>). Responses are parsed without loading HTML into a web view. LinkedIn posts and other links are saved as plain links, with no request.</li>
+        <li><strong>Official embed.</strong> The details screen renders the oEmbed HTML with the platform's own embed script (on X, <code>widgets.js</code>) in a <code>WKWebView</code>. Every link tap is handed to iOS, which opens the platform's app or Safari.</li>
+        <li><strong>Post dates from IDs.</strong> Post IDs on X, Threads, Instagram, TikTok and LinkedIn encode their creation time, so Postfold can sort by date posted without any extra request.</li>
         <li><strong>Polite re-checks.</strong> A background refresh task re-checks a small batch of the oldest saves, one request at a time.</li>
       </ul>
 
@@ -97,7 +97,7 @@
         <li>Ads come from the Google Mobile Ads SDK, behind Google's consent form and the iOS tracking prompt. The app's privacy manifest declares tracking for that reason, and ad requests carry nothing from your library.</li>
         <li>Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.</li>
         <li>Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.</li>
-        <li>Apart from Google's ad services, the only network hosts the app talks to are X's embed services.</li>
+        <li>Apart from Google's ad services, the only network hosts the app talks to are the embed and image servers of the platforms your saved posts come from.</li>
       </ul>
 
       <h2>Requirements</h2>
@@ -117,7 +117,7 @@
             </picture>
             <span>Postfold</span>
           </a>
-          <p>Save posts from X into your own folders. No login, no account. For iPhone, iPad and Android.</p>
+          <p>Save posts from the apps you use into your own folders. No login, no account. For iPhone, iPad and Android.</p>
         </div>
         <div>
           <h4>Product</h4>
@@ -145,7 +145,7 @@
         </div>
       </div>
       <div class="footer-legal">
-        <p>Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp. X is a trademark of X Corp.</p>
+        <p>Postfold is an independent app. It is not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn. Platform names are used only to describe the content Postfold works with, and all trademarks belong to their respective owners.</p>
         <p>Apple, iPhone, iPad, iCloud and App Store are trademarks of Apple Inc.</p>
         <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
         <p>&copy; <span data-year>2026</span> Huy Nguyen. All rights reserved.</p>

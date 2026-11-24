@@ -1,23 +1,23 @@
 # Postfold
 
-> Postfold is an iPhone, iPad and Android app that saves posts from X into folders you create, with your own titles and notes. It has no login of any kind and shows ads from Google AdMob. On iPhone and iPad it has no third-party analytics and syncs through the user's private iCloud. Requires iOS 18 or later, or Android 8.0 or later.
+> Postfold is an iPhone, iPad and Android app that saves posts and links from the apps people use into folders they create, with your own titles and notes. It has no login of any kind and shows ads from Google AdMob. On iPhone and iPad it has no third-party analytics and syncs through the user's private iCloud. Requires iOS 18 or later, or Android 8.0 or later.
 
 This is the Postfold product site at [postfold.space](https://postfold.space). Markdown versions of each page are linked below for AI assistants and LLMs.
 
 Key facts:
-- Saves posts from X into user-created folders (bookmark folders are a Premium-only feature on X)
-- Save in two taps from the iOS Share sheet, or by copying a post link
+- Saves posts from X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn into user-created folders; any other link can be saved as Link Only (no preview)
+- Save in two taps from the Share sheet of the app the user is in, or by copying a post link
 - Custom titles, private notes, emoji and color for folders
-- Sort by date added, date modified, title, date posted or author; filter by date range, author, note or status
+- Sort by date added, date modified, title, date posted or author; filter by platform, date range, author, note or status
 - List, compact and grid layouts; search across post text, authors, titles and notes
-- No login: never connects to an X account, no Postfold account, no X API, no scraping
-- Post content comes only from X's public oEmbed service; the details screen shows X's official embed with "do not track" on
+- No login: never connects to any social media account, no Postfold account, no APIs that need an account or token, no scraping
+- Post content comes only from each platform's public oEmbed service; the details screen shows the platform's official embed (on X with "do not track" on); LinkedIn posts and other links are saved without a preview
 - Library stored on device (SwiftData) and synced through the user's private iCloud (CloudKit); the developer runs no server and never receives the user's posts, notes or folders
 - Ads come from Google AdMob (banner on post details, ads between posts in the list, occasional full-screen ad after adding a post), behind Google's consent form and the iOS tracking prompt; ad requests never include the user's posts, notes or folders
 - Crash reports and usage statistics come only through Apple's built-in tools (MetricKit, Xcode Organizer, App Store Connect), without the user's identity, with an opt-out in the app's Settings
-- Deleted posts are marked Unavailable; the user's link, title, note and folder are kept
+- Deleted or private posts are marked Unavailable; the user's link, title, note and folder are kept
 - An Android version keeps the library on the device (Android backup, no sync) and uses Google Firebase for crash reports and usage statistics; see the Privacy Policy
-- Not affiliated with, endorsed by, or sponsored by X Corp.
+- Not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn
 - Status: available on the [App Store](https://apps.apple.com/app/id6830735922) and [Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
 ---
@@ -36,7 +36,7 @@ Key facts:
 
 ## Legal
 
-- [Privacy Policy](https://postfold.space/privacy/index.md): What is stored on device and in iCloud; connections to X's embed service; Google AdMob ads, consent and tracking choices; anonymous crash reports via Apple on iPhone and iPad; Google Firebase crash and usage reports on Android
+- [Privacy Policy](https://postfold.space/privacy/index.md): What is stored on device and in iCloud; connections to each platform's embed service; Google AdMob ads, consent and tracking choices; anonymous crash reports via Apple on iPhone and iPad; Google Firebase crash and usage reports on Android
 - [Terms of Use](https://postfold.space/terms/index.md): Terms for using the Postfold app
 
 ## Optional

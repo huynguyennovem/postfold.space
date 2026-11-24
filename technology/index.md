@@ -1,6 +1,6 @@
 ---
 title: "Technology | Postfold"
-description: "Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from X's public oEmbed service."
+description: "Postfold is built with SwiftUI, Swift 6, SwiftData and CloudKit. Post content comes only from each platform's public oEmbed service."
 url: "https://postfold.space/technology/"
 ---
 
@@ -26,11 +26,11 @@ Apple frameworks everywhere except ads, which use the Google Mobile Ads SDK and 
 - **Shared Swift package.** Link parsing, oEmbed parsing, models and the sort/filter query live in one local package used by both the app and the extension.
 - **CloudKit-friendly model.** Every field has a default and relationships are optional, as CloudKit requires. Duplicates created by offline saves on two devices are merged on launch.
 
-## Content from X, done by the book
+## Content from social platforms, done by the book
 
-- **oEmbed only.** Post text and embed markup come from X's public oEmbed endpoint, requested with `dnt=true` and `omit_script=true`. Responses are parsed without loading HTML into a web view.
-- **Official embed.** The details screen renders the oEmbed HTML with X's `widgets.js` in a `WKWebView`. Every link tap is handed to iOS, which opens the X app or Safari.
-- **Post dates from IDs.** X post IDs encode their creation time, so Postfold can sort by date posted without any extra request.
+- **oEmbed only.** Post text and embed markup come from each platform's public oEmbed endpoint (on X, requested with `dnt=true` and `omit_script=true`). Responses are parsed without loading HTML into a web view. LinkedIn posts and other links are saved as plain links, with no request.
+- **Official embed.** The details screen renders the oEmbed HTML with the platform's own embed script (on X, `widgets.js`) in a `WKWebView`. Every link tap is handed to iOS, which opens the platform's app or Safari.
+- **Post dates from IDs.** Post IDs on X, Threads, Instagram, TikTok and LinkedIn encode their creation time, so Postfold can sort by date posted without any extra request.
 - **Polite re-checks.** A background refresh task re-checks a small batch of the oldest saves, one request at a time.
 
 ## Privacy, verified
@@ -38,7 +38,7 @@ Apple frameworks everywhere except ads, which use the Google Mobile Ads SDK and 
 - Ads come from the Google Mobile Ads SDK, behind Google's consent form and the iOS tracking prompt. The app's privacy manifest declares tracking for that reason, and ad requests carry nothing from your library.
 - Crash and performance diagnostics use Apple's MetricKit and Xcode Organizer, with an opt-out in Settings. No third-party service receives them.
 - Clipboard detection asks iOS for a yes/no "is there probably a link?" answer, so no paste prompt appears and nothing is read until you tap Paste.
-- Apart from Google's ad services, the only network hosts the app talks to are X's embed services.
+- Apart from Google's ad services, the only network hosts the app talks to are the embed and image servers of the platforms your saved posts come from.
 
 ## Requirements
 

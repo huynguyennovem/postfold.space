@@ -1,6 +1,6 @@
 ---
 title: "Postfold: Organize your posts neatly"
-description: "Postfold saves posts from X into your own folders with titles, notes, sorting and search. No login, no account. For iPhone, iPad and Android, with private iCloud sync on iPhone and iPad."
+description: "Postfold saves posts and links from the apps you use into your own folders with titles, notes, sorting and search. No login, no account. For iPhone, iPad and Android, with private iCloud sync on iPhone and iPad."
 url: "https://postfold.space/"
 ---
 
@@ -8,7 +8,7 @@ For iPhone, iPad and Android
 
 # Your saved posts, finally in folders.
 
-Postfold saves posts from X into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.
+Postfold saves posts from the apps you use into folders you create, with your own titles and notes. No login, no account, no server. Your library syncs through your private iCloud.
 
 [Get it on Google Play](https://play.google.com/store/apps/details?id=com.app.postfold)
 
@@ -21,7 +21,7 @@ Postfold saves posts from X into folders you create, with your own titles and no
 - iOS 18+
 - Android
 
-Bookmark folders on X are a Premium feature. **Postfold gives every saved post a home**, without signing in to anything.
+One long list of saves gets messy fast. **Postfold gives every saved post a home**, without signing in to anything.
 
 Features
 
@@ -29,9 +29,11 @@ Features
 
 Folders, titles, notes, sorting and search for the posts you want to come back to.
 
+Works with posts from X, Threads, Instagram, Facebook, YouTube, TikTok, Reddit and LinkedIn, and with any other link.
+
 ### Save in two taps
 
-Share a post from the X app, pick a folder, done. Add a note right in the Share sheet.
+Share a post from any app, pick a folder, done. Add a note right in the Share sheet.
 
 ### A folder for every idea
 
@@ -43,7 +45,7 @@ Give posts your own title and a private note, so you remember why you saved them
 
 ### Sort and filter your way
 
-Sort by date added, date modified, title, date posted or author. Filter by date range, author, note or status.
+Sort by date added, date modified, title, date posted or author. Filter by platform, date range, author, note or status.
 
 ### List, compact or grid
 
@@ -59,7 +61,7 @@ Your library follows you across iPhone and iPad through your private iCloud. No 
 
 ### Handles deleted posts
 
-If a post disappears from X, Postfold marks it Unavailable and keeps your link, title and note.
+If a post is deleted or made private, Postfold marks it Unavailable and keeps your link, title and note.
 
 ### Copied a link? Save it
 
@@ -71,7 +73,7 @@ How it works
 
 ### Tap Share on a post
 
-In the X app, tap Share on any post and choose Postfold. Or just copy the post's link.
+In the app you're using, tap Share on any post and choose Postfold. Or just copy the post's link.
 
 ### Pick a folder
 
@@ -79,7 +81,7 @@ Choose a folder (or create one), add a note if you like, and tap Save.
 
 ### Find it later
 
-Open Postfold to sort, filter and search your saves. Tap Open in X to read the post in the X app.
+Open Postfold to sort, filter and search your saves. Tap Open to read a post in the app it came from.
 
 [Where your data goes](https://postfold.space/how-it-works/)
 
@@ -97,7 +99,7 @@ Postfold is built so there is nothing to sign in to, and your content never leav
 
 ### Nothing to sign in to
 
-Postfold never asks for your X password and never connects to your X account. There is no Postfold account either.
+Postfold never asks for a password and never connects to your social media accounts. There is no Postfold account either.
 
 ### Your iCloud, not our server
 
@@ -113,25 +115,25 @@ FAQ
 
 ## Questions, answered
 
-### Do I need to sign in to X or create an account?
+### Do I need to sign in or create an account?
 
-No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link.
+No. Postfold has no login of any kind: it never connects to your social media accounts and there is no Postfold account. You save a post by sharing it from the app you're using or by pasting its link.
 
-### Can Postfold import the bookmarks I already have on X?
+### Can Postfold import the bookmarks I saved in other apps?
 
-No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link.
+No. Because Postfold never signs in to any app or website, it cannot read the bookmarks or saves you made there. You add posts one at a time, from the Share sheet or by pasting a link.
 
 ### How do I save a post?
 
-In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen.
+In the app you're using, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen.
 
 ### Are my folders synced between my iPhone and iPad?
 
 Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device.
 
-### What happens when a post is deleted on X?
+### What happens when a post is deleted?
 
-Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept.
+Postfold re-checks saved posts from time to time. If a post is deleted, made private or removed, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept.
 
 ### Does Postfold collect any data?
 
@@ -145,9 +147,9 @@ Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see fold
 
 Any price or in-app purchase is shown on the App Store listing before you download or buy.
 
-### Is Postfold made by X?
+### Is Postfold affiliated with any social network?
 
-No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp.
+No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp., Meta, Google, ByteDance, Reddit or LinkedIn. All trademarks belong to their respective owners.
 
 ## Give your saved posts a home
 
