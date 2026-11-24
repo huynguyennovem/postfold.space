@@ -186,6 +186,7 @@ const CONFIG = {
       bar.remove();
       return;
     }
+    bar.hidden = false;
     const endsInView = new Set();
     let pastTrigger = false;
     const update = () => {

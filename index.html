@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Postfold app icon and the All Posts screen on iPhone">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261124">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Postfold","description":"Save posts from X into folders with your own titles and notes. No login, no account, synced with iCloud.","operatingSystem":"iOS 18.0 or later, Android 8.0 or later","applicationCategory":"ProductivityApplication","url":"https://postfold.space/","image":"https://postfold.space/assets/images/app-icon-512.png","author":{"@type":"Person","name":"Huy Nguyen","email":"huynguyennovem@gmail.com"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to sign in to X or create an account?","acceptedAnswer":{"@type":"Answer","text":"No. Postfold has no login of any kind: it never connects to your X account and there is no Postfold account. You save a post by sharing it from the X app or by pasting its link."}},{"@type":"Question","name":"Can Postfold import the bookmarks I already have on X?","acceptedAnswer":{"@type":"Answer","text":"No. Because Postfold never signs in to X, it cannot read your X bookmarks. You add posts one at a time, from the Share sheet or by pasting a link."}},{"@type":"Question","name":"How do I save a post?","acceptedAnswer":{"@type":"Answer","text":"In the X app, tap Share on a post, then choose Postfold. Pick a folder, add a note if you like, and tap Save. You can also copy a post link and open Postfold: a banner offers to save it, or you can paste it on the Add screen."}},{"@type":"Question","name":"Are my folders synced between my iPhone and iPad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Postfold syncs through your own private iCloud, so every device signed in to the same Apple Account sees the same folders, posts and notes. If iCloud is turned off, everything stays on that device."}},{"@type":"Question","name":"What happens when a post is deleted on X?","acceptedAnswer":{"@type":"Answer","text":"Postfold re-checks saved posts from time to time. If a post is no longer available, it is marked Unavailable and its cached text is removed. Your link, custom title, note and folder are kept."}},{"@type":"Question","name":"Does Postfold collect any data?","acceptedAnswer":{"@type":"Answer","text":"Not your content. Your posts, notes and folders stay on your devices and in your private iCloud, and they are never shared with advertisers. Postfold shows ads from Google AdMob, which uses device data such as your IP address, how you interact with ads and, if you allow tracking, your device's advertising identifier. To fix bugs, we receive anonymous crash reports and usage statistics through Apple's built-in tools. You can turn them off in Postfold's Settings and in iOS Settings. The Privacy Policy has the details."}},{"@type":"Question","name":"Does it work on iPad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Postfold runs on iPhone and iPad with iOS 18 or later. On iPad you see folders, posts and the post itself side by side."}},{"@type":"Question","name":"How much does Postfold cost?","acceptedAnswer":{"@type":"Answer","text":"Any price or in-app purchase is shown on the App Store listing before you download or buy."}},{"@type":"Question","name":"Is Postfold made by X?","acceptedAnswer":{"@type":"Answer","text":"No. Postfold is an independent app and is not affiliated with, endorsed by, or sponsored by X Corp."}}]}</script>
 </head>
@@ -340,7 +340,7 @@
 
   </main>
 
-  <aside class="sticky-download" data-placement="sticky" aria-label="Download Postfold">
+  <aside class="sticky-download" data-placement="sticky" aria-label="Download Postfold" hidden>
     <picture>
       <source srcset="assets/images/app-icon-dark.webp" media="(prefers-color-scheme: dark)" type="image/webp">
       <source srcset="assets/images/app-icon-light.webp" type="image/webp">
@@ -409,6 +409,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=20261124" defer></script>
 </body>
 </html>

@@ -60,6 +60,8 @@ in that browser (`localStorage` key `postfold-sticky-download-dismissed`).
 ## Keep in sync
 
 The header and footer are repeated in every page. When you change one, change all seven HTML files.
+After editing `style.css` or `main.js`, bump the `?v=` date on their links in every HTML file (and `404.html`),
+so browsers don't pair a new page with a cached old stylesheet or script.
 Each `index.md` mirrors its page: update it together with the HTML, and rebuild `llms-full.txt`
 (it is `llms.txt`'s intro followed by every `index.md` body).
 
