@@ -7,21 +7,22 @@ const CONFIG = {
   'use strict';
 
   const CONSENT_KEY = 'postfold-analytics-consent';
+  const STICKY_DISMISSED_KEY = 'postfold-sticky-download-dismissed';
   const privacyUrl = new URL('../../privacy/#website', document.currentScript.src).href;
 
-  const readConsent = () => {
+  const readStorage = (key) => {
     try {
-      return localStorage.getItem(CONSENT_KEY);
+      return localStorage.getItem(key);
     } catch {
       return null;
     }
   };
 
-  const saveConsent = (choice) => {
+  const writeStorage = (key, value) => {
     try {
-      localStorage.setItem(CONSENT_KEY, choice);
+      localStorage.setItem(key, value);
     } catch {
-      // Private mode or blocked storage: the banner shows again next visit.
+      // Private mode or blocked storage: the choice is asked again next visit.
     }
   };
 
@@ -40,7 +41,7 @@ const CONFIG = {
   };
 
   const applyConsent = (choice) => {
-    saveConsent(choice);
+    writeStorage(CONSENT_KEY, choice);
     window.gtag('consent', 'update', { analytics_storage: choice });
     if (choice === 'denied') clearAnalyticsCookies();
   };
@@ -76,10 +77,10 @@ const CONFIG = {
   const trackStoreClicks = () => {
     document.querySelectorAll('.store-badge').forEach((link) => {
       link.addEventListener('click', () => {
-        const section = link.closest('section');
+        const area = link.closest('[data-placement], section');
         window.gtag('event', 'store_click', {
           store: link.hostname === 'play.google.com' ? 'google_play' : 'app_store',
-          placement: section ? section.id || section.className : 'page',
+          placement: area ? area.dataset.placement || area.id || area.className : 'page',
         });
       });
     });
@@ -96,7 +97,7 @@ const CONFIG = {
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied',
-      analytics_storage: readConsent() === 'granted' ? 'granted' : 'denied',
+      analytics_storage: readStorage(CONSENT_KEY) === 'granted' ? 'granted' : 'denied',
     });
     window.gtag('js', new Date());
     window.gtag('config', id, {
@@ -108,7 +109,7 @@ const CONFIG = {
     script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
     document.head.appendChild(script);
 
-    if (!readConsent()) showConsentBanner();
+    if (!readStorage(CONSENT_KEY)) showConsentBanner();
     setupConsentSettings();
     trackStoreClicks();
   };
@@ -177,6 +178,43 @@ const CONFIG = {
     });
   };
 
+  const setupStickyDownload = () => {
+    const bar = document.querySelector('.sticky-download');
+    const trigger = document.querySelector('.hero .store-row');
+    if (!bar) return;
+    if (!trigger || readStorage(STICKY_DISMISSED_KEY)) {
+      bar.remove();
+      return;
+    }
+    const endsInView = new Set();
+    let pastTrigger = false;
+    const update = () => {
+      const show = pastTrigger && endsInView.size === 0 && !document.querySelector('.consent');
+      bar.classList.toggle('is-visible', show);
+    };
+
+    new IntersectionObserver(([entry]) => {
+      pastTrigger = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+      update();
+    }).observe(trigger);
+
+    const endObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) endsInView.add(entry.target);
+        else endsInView.delete(entry.target);
+      });
+      update();
+    });
+    document.querySelectorAll('#download, .site-footer').forEach((el) => endObserver.observe(el));
+
+    new MutationObserver(update).observe(document.body, { childList: true });
+
+    bar.querySelector('.sticky-download-close').addEventListener('click', () => {
+      writeStorage(STICKY_DISMISSED_KEY, '1');
+      bar.remove();
+    });
+  };
+
   document.querySelectorAll('[data-year]').forEach((el) => {
     el.textContent = new Date().getFullYear();
   });
@@ -184,5 +222,6 @@ const CONFIG = {
   setupMenu();
   setupTabs();
   setupLightbox();
+  setupStickyDownload();
   loadGoogleAnalytics();
 })();

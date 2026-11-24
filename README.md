@@ -4,7 +4,7 @@ Static site for [postfold.space](https://postfold.space): plain HTML, one CSS fi
 Published from the GitHub repo `huynguyennovem/postfold.github.io` with GitHub Pages.
 
 ```
-index.html             home: hero, features, how it works, screenshots, privacy, FAQ, download
+index.html             home: hero, features, how it works, screenshots, privacy, FAQ, download, sticky download bar
 how-it-works/          where data goes when you save, view and open a post
 technology/            SwiftUI, SwiftData, CloudKit, oEmbed, Google Mobile Ads
 support/               getting started, troubleshooting, contact
@@ -14,7 +14,7 @@ privacy/  terms/       Privacy Policy, Terms of Use
 */index.md, index.md   Markdown copy of each page for AI assistants
 favicon.ico, llms.txt, llms-full.txt, robots.txt, sitemap.xml, app-ads.txt, CNAME, .nojekyll
 assets/css/style.css   all styles; light and dark mode follow the system setting
-assets/js/main.js      CONFIG block, mobile menu, screenshot tabs + lightbox, analytics loader
+assets/js/main.js      CONFIG block, mobile menu, screenshot tabs + lightbox, sticky download bar, analytics loader
 assets/images/         icons, og-image.jpg (1200×630), App Store and Google Play badges, screenshots/
 assets/fonts/          Inter (self-hosted, latin + latin-ext)
 ```
@@ -46,10 +46,16 @@ Measurement ID (`G-…`, from Google Analytics › Admin › Data streams › We
 - Runs with Consent Mode v2: everything is denied by default and a banner asks for analytics cookies.
 - The choice is kept in `localStorage` (`postfold-analytics-consent`); the Privacy Policy §10 has a
   "Change cookie choice" button (`data-consent-settings`). Google Signals and ad personalization are off.
-- Custom event `store_click` (`store`: `app_store` | `google_play`, `placement`: `hero` | `download`).
+- Custom event `store_click` (`store`: `app_store` | `google_play`, `placement`: `hero` | `download` | `sticky`).
   In GA, register `store` and `placement` as event-scoped custom dimensions and mark `store_click` as a key event.
 
 Privacy Policy §10 describes it. Update it (and `privacy/index.md`, `llms-full.txt`) if analytics changes.
+
+## Sticky download bar
+
+Home page only: a bar with both store badges slides in once the hero's badges scroll out of view and hides
+while the download section or the footer is visible, or while the cookie banner is open. The × hides it for good
+in that browser (`localStorage` key `postfold-sticky-download-dismissed`).
 
 ## Keep in sync
 

@@ -806,6 +806,102 @@ section {
   gap: 10px;
 }
 
+/* ---------- Sticky download bar ---------- */
+.sticky-download {
+  position: fixed;
+  inset-inline: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 2400;
+  max-width: 640px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 10px 10px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(calc(100% + 32px + env(safe-area-inset-bottom, 0px)));
+  visibility: hidden;
+  transition: transform 0.35s ease, visibility 0s linear 0.35s;
+}
+
+.sticky-download.is-visible {
+  transform: none;
+  visibility: visible;
+  transition: transform 0.35s ease;
+}
+
+.sticky-download-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.sticky-download-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--text-2);
+}
+
+.sticky-download-text strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.sticky-download-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sticky-download .store-badge img {
+  width: auto;
+  height: 40px;
+}
+
+.sticky-download-close {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-3);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sticky-download-close:hover {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+@media (max-width: 680px) {
+  .sticky-download {
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .sticky-download-text {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .sticky-download > picture {
+    display: none;
+  }
+}
+
 /* ---------- Privacy band ---------- */
 .band {
   background: linear-gradient(135deg, var(--dark-from), var(--dark-to));
